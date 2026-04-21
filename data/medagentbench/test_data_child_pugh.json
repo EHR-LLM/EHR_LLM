@@ -1,0 +1,344 @@
+[
+  {
+    "id": 0,
+    "instruction": "Calculate the Child-Pugh score for patient S0674240 on date 2023-07-01. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S0674240",
+      "expected_date": "2023-07-01",
+      "expected_bilirubin_raw": 5,
+      "expected_albumin_raw": 3.3,
+      "expected_inr_raw": 1.2,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 2,
+      "expected_albumin_points": 2,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 8
+    }
+  },
+  {
+    "id": 1,
+    "instruction": "Calculate the Child-Pugh score for patient S0674240 on date 2023-09-15. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S0674240",
+      "expected_date": "2023-09-15",
+      "expected_bilirubin_raw": 19.1,
+      "expected_albumin_raw": 2.6,
+      "expected_inr_raw": 1.7,
+      "expected_ascites_present_same_day": true,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 3,
+      "expected_albumin_points": 3,
+      "expected_inr_points": 2,
+      "expected_ascites_points": 2,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 11
+    }
+  },
+  {
+    "id": 2,
+    "instruction": "Calculate the Child-Pugh score for patient S0674240 on date 2023-11-03. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S0674240",
+      "expected_date": "2023-11-03",
+      "expected_bilirubin_raw": 13.1,
+      "expected_albumin_raw": 2.3,
+      "expected_inr_raw": 1.5,
+      "expected_ascites_present_same_day": true,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 3,
+      "expected_albumin_points": 3,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 2,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 10
+    }
+  },
+  {
+    "id": 3,
+    "instruction": "Calculate the Child-Pugh score for patient S2033286 on date 2023-08-03. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S2033286",
+      "expected_date": "2023-08-03",
+      "expected_bilirubin_raw": 1.5,
+      "expected_albumin_raw": 3,
+      "expected_inr_raw": 1,
+      "expected_ascites_present_same_day": true,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 2,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 2,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 7
+    }
+  },
+  {
+    "id": 4,
+    "instruction": "Calculate the Child-Pugh score for patient S2033286 on date 2023-10-24. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S2033286",
+      "expected_date": "2023-10-24",
+      "expected_bilirubin_raw": 2.6,
+      "expected_albumin_raw": 2.5,
+      "expected_inr_raw": 1.3,
+      "expected_ascites_present_same_day": true,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 2,
+      "expected_albumin_points": 3,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 2,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 9
+    }
+  },
+  {
+    "id": 5,
+    "instruction": "Calculate the Child-Pugh score for patient S2033286 on date 2023-11-11. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S2033286",
+      "expected_date": "2023-11-11",
+      "expected_bilirubin_raw": 4.5,
+      "expected_albumin_raw": 1.8,
+      "expected_inr_raw": 1.7,
+      "expected_ascites_present_same_day": true,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 3,
+      "expected_albumin_points": 3,
+      "expected_inr_points": 2,
+      "expected_ascites_points": 2,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 11
+    }
+  },
+  {
+    "id": 6,
+    "instruction": "Calculate the Child-Pugh score for patient S6488980 on date 2023-03-06. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6488980",
+      "expected_date": "2023-03-06",
+      "expected_bilirubin_raw": 0.6,
+      "expected_albumin_raw": 3.6,
+      "expected_inr_raw": 1.1,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 5
+    }
+  },
+  {
+    "id": 7,
+    "instruction": "Calculate the Child-Pugh score for patient S6488980 on date 2023-03-22. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6488980",
+      "expected_date": "2023-03-22",
+      "expected_bilirubin_raw": 0.4,
+      "expected_albumin_raw": 4.2,
+      "expected_inr_raw": 1.3,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 5
+    }
+  },
+  {
+    "id": 8,
+    "instruction": "Calculate the Child-Pugh score for patient S6488980 on date 2023-10-31. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6488980",
+      "expected_date": "2023-10-31",
+      "expected_bilirubin_raw": 0.4,
+      "expected_albumin_raw": 1.5,
+      "expected_inr_raw": 1.7,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 3,
+      "expected_inr_points": 2,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 8
+    }
+  },
+  {
+    "id": 9,
+    "instruction": "Calculate the Child-Pugh score for patient S6500497 on date 2020-08-14. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6500497",
+      "expected_date": "2020-08-14",
+      "expected_bilirubin_raw": 0.4,
+      "expected_albumin_raw": 4.6,
+      "expected_inr_raw": 1,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 5
+    }
+  },
+  {
+    "id": 10,
+    "instruction": "Calculate the Child-Pugh score for patient S6500497 on date 2022-01-04. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6500497",
+      "expected_date": "2022-01-04",
+      "expected_bilirubin_raw": 0.2,
+      "expected_albumin_raw": 4.4,
+      "expected_inr_raw": 1,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 5
+    }
+  },
+  {
+    "id": 11,
+    "instruction": "Calculate the Child-Pugh score for patient S6500497 on date 2023-08-23. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6500497",
+      "expected_date": "2023-08-23",
+      "expected_bilirubin_raw": 0.3,
+      "expected_albumin_raw": 5,
+      "expected_inr_raw": 1,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 5
+    }
+  },
+  {
+    "id": 12,
+    "instruction": "Calculate the Child-Pugh score for patient S6539215 on date 2023-09-03. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6539215",
+      "expected_date": "2023-09-03",
+      "expected_bilirubin_raw": 0.6,
+      "expected_albumin_raw": 2.3,
+      "expected_inr_raw": 1.7,
+      "expected_ascites_present_same_day": true,
+      "expected_encephalopathy_present_same_day": true,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 3,
+      "expected_inr_points": 2,
+      "expected_ascites_points": 2,
+      "expected_encephalopathy_points": 2,
+      "expected_child_pugh_score": 10
+    }
+  },
+  {
+    "id": 13,
+    "instruction": "Calculate the Child-Pugh score for patient S6539215 on date 2023-09-19. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6539215",
+      "expected_date": "2023-09-19",
+      "expected_bilirubin_raw": 1.2,
+      "expected_albumin_raw": 2.1,
+      "expected_inr_raw": 1.5,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 3,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 7
+    }
+  },
+  {
+    "id": 14,
+    "instruction": "Calculate the Child-Pugh score for patient S6539215 on date 2023-10-27. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6539215",
+      "expected_date": "2023-10-27",
+      "expected_bilirubin_raw": 1.6,
+      "expected_albumin_raw": 2.7,
+      "expected_inr_raw": 2,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": true,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 2,
+      "expected_inr_points": 2,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 2,
+      "expected_child_pugh_score": 8
+    }
+  },
+  {
+    "id": 15,
+    "instruction": "Calculate the Child-Pugh score for patient S6545016 on date 2023-07-06. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6545016",
+      "expected_date": "2023-07-06",
+      "expected_bilirubin_raw": 1.9,
+      "expected_albumin_raw": 4,
+      "expected_inr_raw": 1.2,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 5
+    }
+  },
+  {
+    "id": 16,
+    "instruction": "Calculate the Child-Pugh score for patient S6545016 on date 2023-09-25. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6545016",
+      "expected_date": "2023-09-25",
+      "expected_bilirubin_raw": 1.3,
+      "expected_albumin_raw": 4.6,
+      "expected_inr_raw": 1,
+      "expected_ascites_present_same_day": false,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 1,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 5
+    }
+  },
+  {
+    "id": 17,
+    "instruction": "Calculate the Child-Pugh score for patient S6545016 on date 2023-11-05. Retrieve bilirubin (TBIL), albumin (ALB), and INR from Observations on that date. Check Condition resources for the same date for ascites (codes starting with R18) and encephalopathy (codes starting with G93). Compute points for each component and the total Child-Pugh score.",
+    "sol": {
+      "expected_patient_id": "S6545016",
+      "expected_date": "2023-11-05",
+      "expected_bilirubin_raw": 0.4,
+      "expected_albumin_raw": 3.4,
+      "expected_inr_raw": 1,
+      "expected_ascites_present_same_day": true,
+      "expected_encephalopathy_present_same_day": false,
+      "expected_bilirubin_points": 1,
+      "expected_albumin_points": 1,
+      "expected_inr_points": 1,
+      "expected_ascites_points": 2,
+      "expected_encephalopathy_points": 1,
+      "expected_child_pugh_score": 6
+    }
+  }
+]

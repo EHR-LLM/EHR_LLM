@@ -1,0 +1,13 @@
+definition:
+  import: tasks/task_assembly.yaml
+
+start:
+  # NO-CALCULATOR MODE (tasks that compute scores manually)
+  meld-std: 2
+  fib4-std: 2
+  child-pugh-std: 2
+  
+  # WITH CALCULATOR MODE (tasks that use calculator API)
+  meld-calc: 2
+  fib4-calc: 2
+  child-pugh-calc: 2

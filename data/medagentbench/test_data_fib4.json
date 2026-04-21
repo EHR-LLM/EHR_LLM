@@ -1,0 +1,272 @@
+[
+  {
+    "id": "fib4_1",
+    "instruction": "Calculate the FIB-4 score for patient S0674240 on date 2023-07-01. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-07-01. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 6.99,
+      "expected_patient_id": "S0674240",
+      "expected_date": "2023-07-01",
+      "expected_age": 71,
+      "expected_ast_raw": 189,
+      "expected_alt_raw": 137,
+      "expected_platelets_raw": 164
+    },
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "fib4_2",
+    "instruction": "Calculate the FIB-4 score for patient S0674240 on date 2023-09-15. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-09-15. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 4.19,
+      "expected_patient_id": "S0674240",
+      "expected_date": "2023-09-15",
+      "expected_age": 71,
+      "expected_ast_raw": 100,
+      "expected_alt_raw": 47,
+      "expected_platelets_raw": 247
+    },
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "fib4_3",
+    "instruction": "Calculate the FIB-4 score for patient S0674240 on date 2023-11-03. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-11-03. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 6.02,
+      "expected_patient_id": "S0674240",
+      "expected_date": "2023-11-03",
+      "expected_age": 71,
+      "expected_ast_raw": 102,
+      "expected_alt_raw": 58,
+      "expected_platelets_raw": 158
+    },
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "fib4_4",
+    "instruction": "Calculate the FIB-4 score for patient S2033286 on date 2023-08-03. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-08-03. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 22.96,
+      "expected_patient_id": "S2033286",
+      "expected_date": "2023-08-03",
+      "expected_age": 74,
+      "expected_ast_raw": 183,
+      "expected_alt_raw": 69,
+      "expected_platelets_raw": 71
+    },
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "fib4_5",
+    "instruction": "Calculate the FIB-4 score for patient S2033286 on date 2023-10-24. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-10-24. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 25.40,
+      "expected_patient_id": "S2033286",
+      "expected_date": "2023-10-24",
+      "expected_age": 75,
+      "expected_ast_raw": 65,
+      "expected_alt_raw": 47,
+      "expected_platelets_raw": 28
+    },
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "fib4_6",
+    "instruction": "Calculate the FIB-4 score for patient S2033286 on date 2023-11-11. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-11-11. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 18.33,
+      "expected_patient_id": "S2033286",
+      "expected_date": "2023-11-11",
+      "expected_age": 75,
+      "expected_ast_raw": 224,
+      "expected_alt_raw": 84,
+      "expected_platelets_raw": 100
+    },
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "fib4_7",
+    "instruction": "Calculate the FIB-4 score for patient S6488980 on date 2023-03-06. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-03-06. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 1.35,
+      "expected_patient_id": "S6488980",
+      "expected_date": "2023-03-06",
+      "expected_age": 48,
+      "expected_ast_raw": 29,
+      "expected_alt_raw": 29,
+      "expected_platelets_raw": 191
+    },
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "fib4_8",
+    "instruction": "Calculate the FIB-4 score for patient S6488980 on date 2023-03-22. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-03-22. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 0.99,
+      "expected_patient_id": "S6488980",
+      "expected_date": "2023-03-22",
+      "expected_age": 48,
+      "expected_ast_raw": 24,
+      "expected_alt_raw": 14,
+      "expected_platelets_raw": 311
+    },
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "fib4_9",
+    "instruction": "Calculate the FIB-4 score for patient S6488980 on date 2023-10-31. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-10-31. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 1.07,
+      "expected_patient_id": "S6488980",
+      "expected_date": "2023-10-31",
+      "expected_age": 49,
+      "expected_ast_raw": 18,
+      "expected_alt_raw": 7,
+      "expected_platelets_raw": 311
+    },
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "fib4_10",
+    "instruction": "Calculate the FIB-4 score for patient S6500497 on date 2020-08-14. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2020-08-14. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 0.37,
+      "expected_patient_id": "S6500497",
+      "expected_date": "2020-08-14",
+      "expected_age": 29,
+      "expected_ast_raw": 46,
+      "expected_alt_raw": 59,
+      "expected_platelets_raw": 473
+    },
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "fib4_11",
+    "instruction": "Calculate the FIB-4 score for patient S6500497 on date 2022-01-04. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2022-01-04. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 0.22,
+      "expected_patient_id": "S6500497",
+      "expected_date": "2022-01-04",
+      "expected_age": 30,
+      "expected_ast_raw": 20,
+      "expected_alt_raw": 29,
+      "expected_platelets_raw": 518
+    },
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "fib4_12",
+    "instruction": "Calculate the FIB-4 score for patient S6500497 on date 2023-08-23. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-08-23. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 0.37,
+      "expected_patient_id": "S6500497",
+      "expected_date": "2023-08-23",
+      "expected_age": 32,
+      "expected_ast_raw": 44,
+      "expected_alt_raw": 39,
+      "expected_platelets_raw": 608
+    },
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "fib4_13",
+    "instruction": "Calculate the FIB-4 score for patient S6539215 on date 2023-09-04. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-09-04. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 4.02,
+      "expected_patient_id": "S6539215",
+      "expected_date": "2023-09-04",
+      "expected_age": 63,
+      "expected_ast_raw": 24,
+      "expected_alt_raw": 16,
+      "expected_platelets_raw": 94
+    },
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "fib4_14",
+    "instruction": "Calculate the FIB-4 score for patient S6539215 on date 2023-09-19. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-09-19. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 3.33,
+      "expected_patient_id": "S6539215",
+      "expected_date": "2023-09-19",
+      "expected_age": 63,
+      "expected_ast_raw": 28,
+      "expected_alt_raw": 22,
+      "expected_platelets_raw": 113
+    },
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "fib4_15",
+    "instruction": "Calculate the FIB-4 score for patient S6539215 on date 2023-10-27. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-10-27. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 1.38,
+      "expected_patient_id": "S6539215",
+      "expected_date": "2023-10-27",
+      "expected_age": 63,
+      "expected_ast_raw": 26,
+      "expected_alt_raw": 14,
+      "expected_platelets_raw": 318
+    },
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "fib4_16",
+    "instruction": "Calculate the FIB-4 score for patient S6545016 on date 2023-07-06. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-07-06. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 1.79,
+      "expected_patient_id": "S6545016",
+      "expected_date": "2023-07-06",
+      "expected_age": 59,
+      "expected_ast_raw": 22,
+      "expected_alt_raw": 8,
+      "expected_platelets_raw": 256
+    },
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "fib4_17",
+    "instruction": "Calculate the FIB-4 score for patient S6545016 on date 2023-09-25. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-09-25. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 1.36,
+      "expected_patient_id": "S6545016",
+      "expected_date": "2023-09-25",
+      "expected_age": 59,
+      "expected_ast_raw": 15,
+      "expected_alt_raw": 13,
+      "expected_platelets_raw": 180
+    },
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "fib4_18",
+    "instruction": "Calculate the FIB-4 score for patient S6545016 on date 2023-11-05. Retrieve the AST (code: AST), ALT (code: ALT), platelets (code: PLT), and date of birth from the Patient resource for this patient. Calculate age at the lab date. Compute FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). Report the result as a JSON object.",
+    "context": "Current date: 2023-11-05. The FIB-4 formula is: FIB-4 = (Age × AST) / (Platelets × sqrt(ALT)). All three lab values (AST, ALT, Platelets) must be from the specified date. Age must be calculated as (lab date - date of birth) in years. Return ONLY the JSON object — no extra text.",
+    "sol": {
+      "expected_fib4": 1.42,
+      "expected_patient_id": "S6545016",
+      "expected_date": "2023-11-05",
+      "expected_age": 59,
+      "expected_ast_raw": 21,
+      "expected_alt_raw": 15,
+      "expected_platelets_raw": 226
+    },
+    "eval_MRN": "S6545016"
+  }
+]

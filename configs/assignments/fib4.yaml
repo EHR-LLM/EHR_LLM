@@ -1,0 +1,29 @@
+import: definition.yaml
+
+concurrency:
+  task:
+    fib4-std: 6
+  agent:
+    gpt-5-mini: 6
+    gemini-3.1-flash-lite: 6
+    claude-haiku-4.5: 6
+    xiaomi-mimo-v2-pro: 6
+    z-ai-glm-5: 6
+    gemma-3-27b-it: 6
+    nemotron-3-nano-30b: 6
+    gpt-oss-20b: 6
+
+assignments:
+  - agent:
+      - gpt-5-mini
+      - gemini-3.1-flash-lite
+      - claude-haiku-4.5
+      - xiaomi-mimo-v2-pro
+      - z-ai-glm-5
+      - gemma-3-27b-it
+      - nemotron-3-nano-30b
+      - gpt-oss-20b
+    task:
+      - fib4-std
+
+output: "outputs/FIB4Bench"

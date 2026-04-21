@@ -1,0 +1,15 @@
+module: src.client.agents.HTTPAgent
+parameters:
+  url: https://api.helmholtz-blablador.fz-juelich.de/v1/chat/completions
+  headers:
+    Content-Type: application/json
+    Authorization: Bearer glpat-ehw03IGKLTPaY4Vl_Iaycm86MQp1OnA5bgk.01.0z1j6yr2i
+  body:
+    model: "01 - MiniMax-M2.5 - our best model as of February, 2026"
+    temperature: 0
+    max_tokens: 2048
+  prompter:
+    name: role_content_dict
+    args:
+      agent_role: assistant
+  return_format: "{response[choices][0][message][content]}"

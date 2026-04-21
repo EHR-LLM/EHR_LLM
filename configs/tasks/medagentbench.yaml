@@ -1,0 +1,70 @@
+default:
+  module: src.server.tasks.medagentbench.MedAgentBench
+  parameters:
+    concurrency: 6
+    max_round: 8
+    fhir_api_base: "http://localhost:8080/fhir/"
+
+medagentbench-std:
+  parameters:
+    name: medagentbench-std
+    data_file: "data/medagentbench/test_data_v2.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+
+# ================================================================================
+# NO-CALCULATOR MODE - model computes score itself
+# Standard naming: {score}-std maps to outputs/{Score}Bench_no_calc/
+# ================================================================================
+
+meld-std:
+  parameters:
+    name: meld-std
+    data_file: "data/medagentbench/test_data_meld.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+    use_calculator: false
+    output_dir: "outputs/MELDBench_no_calc"
+
+fib4-std:
+  parameters:
+    name: fib4-std
+    data_file: "data/medagentbench/test_data_fib4.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+    use_calculator: false
+    output_dir: "outputs/FIB4Bench_no_calc"
+
+child-pugh-std:
+  parameters:
+    name: child-pugh-std
+    data_file: "data/medagentbench/test_data_child_pugh.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+    use_calculator: false
+    output_dir: "outputs/ChildPughBench_no_calc"
+
+# ================================================================================
+# CALCULATOR MODE - model uses calculator API
+# Naming: {score}-calc maps to outputs/{Score}Bench_with_calc/
+# ================================================================================
+
+meld-calc:
+  parameters:
+    name: meld-calc
+    data_file: "data/medagentbench/test_data_meld.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+    use_calculator: true
+    output_dir: "outputs/MELDBench_with_calc"
+
+fib4-calc:
+  parameters:
+    name: fib4-calc
+    data_file: "data/medagentbench/test_data_fib4.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+    use_calculator: true
+    output_dir: "outputs/FIB4Bench_with_calc"
+
+child-pugh-calc:
+  parameters:
+    name: child-pugh-calc
+    data_file: "data/medagentbench/test_data_child_pugh.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+    use_calculator: true
+    output_dir: "outputs/ChildPughBench_with_calc"
