@@ -1,0 +1,166 @@
+{
+    "total": 18,
+    "validation": {
+        "running": 0.0,
+        "completed": 0.1111111111111111,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.8888888888888888,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 4.333333333333333,
+        "max_history_length": 8,
+        "min_history_length": 2
+    },
+    "custom": {
+        "success rate": 0.1111111111111111,
+        "raw_results": [
+            {
+                "index": 1,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 0,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6539215\", \"date\": \"2023-09-03\", \"bilirubin_raw\": 0.6, \"inr_raw\": 1.7, \"creatinine_raw\": 2.33, \"bilirubin_used\": 1.0, \"inr_used\": 1.7, \"creatinine_used\": 2.33, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": false, \"meld_score\": 20.46}"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6539215\", \"date\": \"2023-10-27\", \"bilirubin_raw\": 1.6, \"inr_raw\": 2.0, \"creatinine_raw\": 2.52, \"bilirubin_used\": 1.6, \"inr_used\": 2.0, \"creatinine_used\": 2.52, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": false, \"meld_score\": 24.82}"
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            }
+        ],
+        "metric_patient_id_correct": 0.1111111111111111,
+        "metric_date_correct": 0.1111111111111111,
+        "metric_bilirubin_raw_correct": 0.1111111111111111,
+        "metric_inr_raw_correct": 0.1111111111111111,
+        "metric_creatinine_raw_correct": 0.1111111111111111,
+        "metric_bilirubin_used_correct": 0.1111111111111111,
+        "metric_inr_used_correct": 0.1111111111111111,
+        "metric_creatinine_used_correct": 0.1111111111111111,
+        "metric_bilirubin_corrected_correct": 0.1111111111111111,
+        "metric_inr_corrected_correct": 0.1111111111111111,
+        "metric_creatinine_corrected_correct": 0.1111111111111111,
+        "metric_meld_score_correct": 0.1111111111111111,
+        "metric_full_case_success": 0.1111111111111111,
+        "metric_all_lab_raws_correct": 0.1111111111111111,
+        "metric_all_lab_useds_correct": 0.1111111111111111,
+        "metric_all_corrections_correct": 0.1111111111111111,
+        "metric_num_cases": 18,
+        "metric_avg_fields_correct": 0.1111111111111111
+    },
+    "replicate": 1
+}

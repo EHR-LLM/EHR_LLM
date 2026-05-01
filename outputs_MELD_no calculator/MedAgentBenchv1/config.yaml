@@ -1,0 +1,281 @@
+assignments:
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+- agent: gpt-5-mini
+  task: meld-std
+concurrency:
+  agent:
+    claude-haiku-4.5: 5
+    gemini-3.1-flash-lite: 5
+    gemma-3-27b-it: 2
+    gpt-4o-mini: 10
+    gpt-5-mini: 5
+    gpt-oss-120b: 5
+    gpt-oss-20b-free: 2
+    minimax-m2.5: 5
+    nemotron-3-nano-30b: 3
+    qwen3-80b: 1
+    xiaomi-mimo-v2-pro: 3
+    z-ai-glm-5: 3
+  task:
+    meld-std: 20
+definition:
+  agent:
+    claude-haiku-4.5:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: anthropic/claude-haiku-4.5
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: claude-haiku-4.5
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    gemini-3.1-flash-lite:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: google/gemini-3.1-flash-lite-preview
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: gemini-3.1-flash-lite
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    gemma-3-27b-it:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: google/gemma-3-27b-it:free
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: gemma-3-27b-it
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    gpt-4o-mini:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: gpt-4o-mini
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+        name: gpt-4o-mini
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://api.openai.com/v1/chat/completions
+    gpt-5-mini:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: openai/gpt-5-mini
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: gpt-5-mini
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    gpt-oss-120b:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: openai/gpt-oss-120b:free
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: gpt-oss-120b
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    gpt-oss-20b-free:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: openai/gpt-oss-20b:free
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: gpt-oss-20b-free
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    minimax-m2.5:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: minimax/minimax-m2.5:free
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: minimax-m2.5
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    nemotron-3-nano-30b:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: nvidia/nemotron-3-nano-30b-a3b
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: nemotron-3-nano-30b
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    qwen3-80b:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: qwen/qwen3-next-80b-a3b-instruct:free
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: qwen3-80b
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    xiaomi-mimo-v2-pro:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: xiaomi/mimo-v2-pro
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: xiaomi-mimo-v2-pro
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+    z-ai-glm-5:
+      module: src.client.agents.HTTPAgent
+      parameters:
+        body:
+          max_tokens: 2048
+          model: z-ai/glm-5
+          temperature: 0
+        headers:
+          Authorization: Bearer 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
+          Content-Type: application/json
+          HTTP-Referer: http://localhost
+          X-Title: MedAgentBench
+        name: z-ai-glm-5
+        prompter:
+          args:
+            agent_role: assistant
+          name: role_content_dict
+        return_format: '{response[choices][0][message][content]}'
+        url: https://openrouter.ai/api/v1/chat/completions
+  task:
+    meld-std:
+      module: src.client.TaskClient
+      parameters:
+        concurrency: 1
+        controller_address: http://localhost:5000/api
+        data_file: data/medagentbench/test_data_meld.json
+        fhir_api_base: http://localhost:8080/fhir/
+        func_file: data/medagentbench/funcs_v1.json
+        max_round: 8
+        name: meld-std
+output: outputs/MedAgentBenchv1

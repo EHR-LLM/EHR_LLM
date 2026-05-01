@@ -9,11 +9,35 @@ from src.server.task import Task, Session
 from src.typings import TaskOutput, SampleStatus, AgentOutputStatus
 from .utils import *
 from .eval import eval as medagentbench_eval
-from .refsol import task_meld, compute_aggregate_metrics, task_fib4, task_child_pugh
+from .refsol import task_meld, compute_aggregate_metrics, task_fib4, task_child_pugh, task_ta1, compute_ta1_metrics, task_ta3, compute_ta3_metrics
 from .meld_calculator import calculate_meld, calculate_fib4, calculate_child_pugh
 import time
 import json
 import importlib
+
+# ============================================================================
+# GENERIC PROMPT (used for TA1 and TA3 tasks)
+# ============================================================================
+
+MedAgentBench_prompt = """You are an expert in using FHIR functions to assist medical professionals. You are given a question and a set of possible functions. Based on the question, you will need to make one or more function/tool calls to achieve the purpose.
+
+1. If you decide to invoke a GET function, you MUST put it in the format of
+GET url?param_name1=param_value1&param_name2=param_value2...
+
+2. If you decide to invoke a POST function, you MUST put it in the format of
+POST url
+[your payload data in JSON format]
+
+3. If you have got answers for all the questions and finished all the requested tasks, you MUST call to finish the conversation in the format of (make sure the list is JSON loadable.)
+FINISH([answer1, answer2, ...])
+
+Your response must be in the format of one of the three cases, and you can call only one function each time. You SHOULD NOT include any other text in the response.
+
+Here is a list of functions in JSON format that you can invoke. Note that you should use {{api_base}} as the api_base.
+{{functions}}
+
+Context: {{context}}
+Question: {{question}}"""
 
 # ============================================================================
 # PROMPTS FOR NO-CALCULATOR MODE (model computes score itself)
@@ -296,6 +320,8 @@ class MedAgentBench(Task):
         self._is_meld = self.task_name.startswith("meld")
         self._is_fib4 = self.task_name.startswith("fib4")
         self._is_child_pugh = self.task_name.startswith("child-pugh")
+        self._is_ta1 = self.task_name.startswith("ta1")
+        self._is_ta3 = self.task_name.startswith("ta3")
         
         # Calculator mode flag - controls behavior
         self.use_calculator = configs.pop("use_calculator", False)
@@ -326,8 +352,10 @@ class MedAgentBench(Task):
             prompt_template = FIB4_prompt_calc if self.use_calculator else FIB4_prompt
         elif self._is_child_pugh:
             prompt_template = ChildPugh_prompt_calc if self.use_calculator else ChildPugh_prompt
+        elif self._is_ta1 or self._is_ta3:
+            prompt_template = MedAgentBench_prompt
         else:
-            raise ValueError(f"Unknown task type: {self.task_name}. Expected meld-*, fib4-*, or child-pugh-*")
+            raise ValueError(f"Unknown task type: {self.task_name}. Expected meld-*, fib4-*, child-pugh-*, ta1-*, or ta3-*")
         
         return prompt_template.format(
             api_base=self.fhir_api_base,
@@ -608,6 +636,50 @@ class MedAgentBench(Task):
             aggregate = compute_aggregate_metrics(eval_results)
             return {
                 'success rate': aggregate.get('metric_full_case_success', 0.0),
+                'raw_results': annot_results,
+                **aggregate,
+            }
+        elif self._is_ta1:
+            eval_results = []
+            annot_results = []
+            for i in range(total_task):
+                ds_index = results[i].index
+                eval_result = task_ta1(self.data[ds_index], results[i])
+                eval_results.append(eval_result)
+                passed = eval_result.get("correct", False)
+                annot_results.append({
+                    "index": ds_index,
+                    "status": str(results[i].status),
+                    "evaluation": "Correct" if passed else "Incorrect",
+                    "correct": passed,
+                    "result": results[i].result,
+                })
+
+            aggregate = compute_ta1_metrics(eval_results, [self.data[r.index] for r in results])
+            return {
+                'success rate': aggregate.get('metric_accuracy', 0.0),
+                'raw_results': annot_results,
+                **aggregate,
+            }
+        elif self._is_ta3:
+            eval_results = []
+            annot_results = []
+            for i in range(total_task):
+                ds_index = results[i].index
+                eval_result = task_ta3(self.data[ds_index], results[i])
+                eval_results.append(eval_result)
+                passed = eval_result.get("correct", False)
+                annot_results.append({
+                    "index": ds_index,
+                    "status": str(results[i].status),
+                    "evaluation": "Correct" if passed else "Incorrect",
+                    "correct": passed,
+                    "result": results[i].result,
+                })
+
+            aggregate = compute_ta3_metrics(eval_results, [self.data[r.index] for r in results])
+            return {
+                'success rate': aggregate.get('metric_accuracy', 0.0),
                 'raw_results': annot_results,
                 **aggregate,
             }

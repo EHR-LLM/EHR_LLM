@@ -1,0 +1,261 @@
+{
+    "total": 30,
+    "validation": {
+        "running": 0.0,
+        "completed": 0.7333333333333333,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.26666666666666666,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 3.6,
+        "max_history_length": 6,
+        "min_history_length": 2
+    },
+    "custom": {
+        "success rate": 0.13333333333333333,
+        "raw_results": [
+            {
+                "index": 0,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed hypoalbuminemia. The first albumin measurement below 3.5 g/dL after 2023‑01‑14 was on 2023‑02‑03.\"]"
+            },
+            {
+                "index": 1,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hypoalbuminemia. The first measurement below 2.8 g/dL was on 2023-09-15.\"]"
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[]"
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hyperbilirubinemia. The first measurement that exceeded 5.0 mg/dL was on 2023-09-14.\"]"
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, first hypoalbuminemia on 2022-02-21\"]"
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hypoalbuminemia. The first albumin measurement that fell below 2.8 g/dL was on 2023‑09‑03.\"]"
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed moderate hyperbilirubinemia. The first measurement that exceeded 2.0 mg/dL was on 2023-07-14.\"]"
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed thrombocytopenia. The first platelet count below 150 K/uL was recorded on 2023-06-16.\"]"
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed hypoalbuminemia. The first albumin measurement that fell below 3.5 g/dL was on 2023-10-14.\"]"
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hypoalbuminemia. The first albumin measurement that fell below 2.8 g/dL was on 2023‑10‑31.\"]"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed mildly prolonged INR. The first measurement that crossed the 1.5 threshold was on 2023-10-31.\"]"
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 18,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, hypoalbuminemia developed. The first subsequent measurement below 3.5 g/dL was on 2023‑09‑04.\"]"
+            },
+            {
+                "index": 19,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hypoalbuminemia. The first measurement below 2.8 g/dL was on 2023-09-04.\"]"
+            },
+            {
+                "index": 21,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient remained thrombocytopenic. The first subsequent platelet count below 150 K/uL after 2023‑09‑04 was 107 K/uL measured on 2023‑09‑05.\"]"
+            },
+            {
+                "index": 20,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed moderate hyperbilirubinemia. The first measurement that crossed the 2.0 mg/dL threshold was on 2023-10-08T14:34:00+00:00.\"]"
+            },
+            {
+                "index": 23,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 22,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"No, the patient did not develop moderate thrombocytopenia after 2023-09-04. No subsequent platelet count measurement was below 100 K/uL.\"]"
+            },
+            {
+                "index": 24,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed hypoalbuminemia. The first albumin measurement below 3.5 g/dL was on 2023-10-10.\"]"
+            },
+            {
+                "index": 25,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed thrombocytopenia. The first platelet count that fell below 150 K/uL was on 2023-01-30.\"]"
+            },
+            {
+                "index": 27,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 28,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 26,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 29,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            }
+        ],
+        "metric_accuracy": 0.13333333333333333,
+        "metric_answer_accuracy": 0.13333333333333333,
+        "metric_date_accuracy": 0.13333333333333333,
+        "metric_correct": 4,
+        "metric_answer_correct": 4,
+        "metric_date_correct": 4,
+        "metric_total": 30,
+        "metric_accuracy_alb": 0.18181818181818182,
+        "metric_accuracy_tbil": 0.2222222222222222,
+        "metric_accuracy_plt": 0.0,
+        "metric_accuracy_alkp": 0.0,
+        "metric_accuracy_inr": 0.0,
+        "metric_accuracy_alt": 0.0,
+        "metric_accuracy_patient_S0674240": 0.0,
+        "metric_accuracy_patient_S2033286": 0.16666666666666666,
+        "metric_accuracy_patient_S6488980": 0.0,
+        "metric_accuracy_patient_S6500497": 1.0,
+        "metric_accuracy_patient_S6539215": 0.16666666666666666,
+        "metric_accuracy_patient_S6545016": 0.16666666666666666,
+        "metric_yes_expected": 24,
+        "metric_no_expected": 6,
+        "metric_sensitivity": 0.0,
+        "metric_specificity": 1.0,
+        "metric_tp": 0,
+        "metric_tn": 4,
+        "metric_fp": 0,
+        "metric_fn": 0,
+        "metric_date_accuracy_positive": 0.0,
+        "metric_num_cases": 30
+    },
+    "replicate": 2
+}

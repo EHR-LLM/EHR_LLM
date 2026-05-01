@@ -1,0 +1,1188 @@
+[
+  {
+    "id": "task_threshold_alb_3p5_S0674240",
+    "instruction": "For patient S0674240, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S0674240",
+    "instruction": "For patient S0674240, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_plt_150_S0674240",
+    "instruction": "For patient S0674240, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S2033286",
+    "instruction": "For patient S2033286, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S2033286",
+    "instruction": "For patient S2033286, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_plt_150_S2033286",
+    "instruction": "For patient S2033286, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6488980",
+    "instruction": "For patient S6488980, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6488980",
+    "instruction": "For patient S6488980, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_plt_150_S6488980",
+    "instruction": "For patient S6488980, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6500497",
+    "instruction": "For patient S6500497, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6500497",
+    "instruction": "For patient S6500497, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_plt_150_S6500497",
+    "instruction": "For patient S6500497, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6539215",
+    "instruction": "For patient S6539215, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6539215",
+    "instruction": "For patient S6539215, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_plt_150_S6539215",
+    "instruction": "For patient S6539215, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6545016",
+    "instruction": "For patient S6545016, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6545016",
+    "instruction": "For patient S6545016, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_plt_150_S6545016",
+    "instruction": "For patient S6545016, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_crossing_alb_3p5_S0674240",
+    "instruction": "Patient S0674240's albumin was 4.1 g/dL on 2023-01-14. hypoalbuminemia is defined as albumin < 3.5 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 3.5 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-01-20"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_alb_2p8_S0674240",
+    "instruction": "Patient S0674240's albumin was 4.1 g/dL on 2023-01-14. severe hypoalbuminemia is defined as albumin < 2.8 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop severe hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 2.8 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-07-03"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_tbil_3p0_S0674240",
+    "instruction": "Patient S0674240's total bilirubin was 0.5 mg/dL on 2023-01-14. clinical jaundice is defined as total bilirubin > 3.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop clinical jaundice? If yes, provide the date of the first measurement that crosses the 3.0 mg/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes",
+      "2023-07-01"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_tbil_2p0_S0674240",
+    "instruction": "Patient S0674240's total bilirubin was 0.5 mg/dL on 2023-01-14. moderate hyperbilirubinemia is defined as total bilirubin > 2.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop moderate hyperbilirubinemia? If yes, provide the date of the first measurement that crosses the 2.0 mg/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes",
+      "2023-07-01"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_tbil_5p0_S0674240",
+    "instruction": "Patient S0674240's total bilirubin was 0.5 mg/dL on 2023-01-14. severe hyperbilirubinemia is defined as total bilirubin > 5.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop severe hyperbilirubinemia? If yes, provide the date of the first measurement that crosses the 5.0 mg/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes",
+      "2023-07-02"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_plt_50_S0674240_neg",
+    "instruction": "Patient S0674240's platelet count was 382.0 K/uL on 2023-01-14. severe thrombocytopenia is defined as platelet count < 50 K/uL. Query all subsequent platelet count (PLT) values from the FHIR server. Did the patient develop severe thrombocytopenia? If yes, provide the date. If no, answer 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_alb_3p5_S2033286",
+    "instruction": "Patient S2033286's albumin was 3.7 g/dL on 2019-12-12. hypoalbuminemia is defined as albumin < 3.5 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 3.5 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2020-12-10"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_crossing_alb_2p8_S2033286",
+    "instruction": "Patient S2033286's albumin was 3.7 g/dL on 2019-12-12. severe hypoalbuminemia is defined as albumin < 2.8 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop severe hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 2.8 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-08-06"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_crossing_tbil_3p0_S2033286",
+    "instruction": "Patient S2033286's total bilirubin was 0.3 mg/dL on 2019-12-12. clinical jaundice is defined as total bilirubin > 3.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop clinical jaundice? If yes, provide the date of the first measurement that crosses the 3.0 mg/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes",
+      "2023-11-10"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_crossing_tbil_2p0_S2033286",
+    "instruction": "Patient S2033286's total bilirubin was 0.3 mg/dL on 2019-12-12. moderate hyperbilirubinemia is defined as total bilirubin > 2.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop moderate hyperbilirubinemia? If yes, provide the date of the first measurement that crosses the 2.0 mg/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes",
+      "2023-07-14"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_crossing_plt_150_S2033286",
+    "instruction": "Patient S2033286's platelet count was 276.0 K/uL on 2018-11-23. thrombocytopenia is defined as platelet count < 150 K/uL. Query all subsequent platelet count (PLT) values from the FHIR server. Did the patient develop thrombocytopenia? If yes, provide the date of the first measurement that crosses the 150 K/uL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes",
+      "2023-05-13"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_crossing_tbil_5p0_S2033286_neg",
+    "instruction": "Patient S2033286's total bilirubin was 0.3 mg/dL on 2019-12-12. severe hyperbilirubinemia is defined as total bilirubin > 5.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop severe hyperbilirubinemia? If yes, provide the date. If no, answer 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_crossing_alb_3p5_S6488980",
+    "instruction": "Patient S6488980's albumin was 3.6 g/dL on 2023-03-06. hypoalbuminemia is defined as albumin < 3.5 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 3.5 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-10-14"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_crossing_alb_2p8_S6488980",
+    "instruction": "Patient S6488980's albumin was 3.6 g/dL on 2023-03-06. severe hypoalbuminemia is defined as albumin < 2.8 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop severe hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 2.8 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-10-31"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_crossing_alkp_147_S6488980",
+    "instruction": "Patient S6488980's alkaline phosphatase was 204.0 U/L on 2023-03-06. elevated alkaline phosphatase is defined as alkaline phosphatase > 147 U/L. Query all subsequent alkaline phosphatase (ALKP) values from the FHIR server. Did the patient develop elevated alkaline phosphatase? If yes, provide the date of the first measurement that crosses the 147 U/L threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "yes",
+      "2023-03-06"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_crossing_inr_1p5_S6488980",
+    "instruction": "Patient S6488980's INR was 1.1  on 2023-03-06. mildly prolonged INR is defined as INR > 1.5 . Query all subsequent INR (INR) values from the FHIR server. Did the patient develop mildly prolonged INR? If yes, provide the date of the first measurement that crosses the 1.5  threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for INR is 'INR'.",
+    "sol": [
+      "yes",
+      "2023-10-31"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_crossing_tbil_3p0_S6488980_neg",
+    "instruction": "Patient S6488980's total bilirubin was 0.6 mg/dL on 2023-03-06. clinical jaundice is defined as total bilirubin > 3.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop clinical jaundice? If yes, provide the date. If no, answer 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_crossing_alb_3p5_S6500497_neg",
+    "instruction": "Patient S6500497's albumin was 4.2 g/dL on 2019-11-15. hypoalbuminemia is defined as albumin < 3.5 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop hypoalbuminemia? If yes, provide the date. If no, answer 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_crossing_alb_3p5_S6539215",
+    "instruction": "Patient S6539215's albumin was 2.3 g/dL on 2023-09-03. hypoalbuminemia is defined as albumin < 3.5 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 3.5 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-09-03"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_crossing_alb_2p8_S6539215",
+    "instruction": "Patient S6539215's albumin was 2.3 g/dL on 2023-09-03. severe hypoalbuminemia is defined as albumin < 2.8 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop severe hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 2.8 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-09-03"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_crossing_tbil_2p0_S6539215",
+    "instruction": "Patient S6539215's total bilirubin was 0.6 mg/dL on 2023-09-03. moderate hyperbilirubinemia is defined as total bilirubin > 2.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop moderate hyperbilirubinemia? If yes, provide the date of the first measurement that crosses the 2.0 mg/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes",
+      "2023-10-08"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_crossing_plt_150_S6539215",
+    "instruction": "Patient S6539215's platelet count was 94.0 K/uL on 2023-09-04. thrombocytopenia is defined as platelet count < 150 K/uL. Query all subsequent platelet count (PLT) values from the FHIR server. Did the patient develop thrombocytopenia? If yes, provide the date of the first measurement that crosses the 150 K/uL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes",
+      "2023-09-04"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_crossing_plt_100_S6539215",
+    "instruction": "Patient S6539215's platelet count was 94.0 K/uL on 2023-09-04. moderate thrombocytopenia is defined as platelet count < 100 K/uL. Query all subsequent platelet count (PLT) values from the FHIR server. Did the patient develop moderate thrombocytopenia? If yes, provide the date of the first measurement that crosses the 100 K/uL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes",
+      "2023-09-04"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_crossing_tbil_3p0_S6539215_neg",
+    "instruction": "Patient S6539215's total bilirubin was 0.6 mg/dL on 2023-09-03. clinical jaundice is defined as total bilirubin > 3.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop clinical jaundice? If yes, provide the date. If no, answer 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_crossing_alb_3p5_S6545016",
+    "instruction": "Patient S6545016's albumin was 4.7 g/dL on 2022-08-08. hypoalbuminemia is defined as albumin < 3.5 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 3.5 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-07-07"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_crossing_plt_150_S6545016",
+    "instruction": "Patient S6545016's platelet count was 185.0 K/uL on 2022-08-08. thrombocytopenia is defined as platelet count < 150 K/uL. Query all subsequent platelet count (PLT) values from the FHIR server. Did the patient develop thrombocytopenia? If yes, provide the date of the first measurement that crosses the 150 K/uL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes",
+      "2022-10-31"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_crossing_plt_100_S6545016",
+    "instruction": "Patient S6545016's platelet count was 185.0 K/uL on 2022-08-08. moderate thrombocytopenia is defined as platelet count < 100 K/uL. Query all subsequent platelet count (PLT) values from the FHIR server. Did the patient develop moderate thrombocytopenia? If yes, provide the date of the first measurement that crosses the 100 K/uL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes",
+      "2022-11-14"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_crossing_alt_120_S6545016",
+    "instruction": "Patient S6545016's ALT was 16.0 U/L on 2022-08-08. CTCAE Grade 2 ALT elevation is defined as ALT > 120 U/L. Query all subsequent ALT (ALT) values from the FHIR server. Did the patient develop moderate ALT elevation? If yes, provide the date of the first measurement that crosses the 120 U/L threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "yes",
+      "2022-10-17"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_crossing_alkp_147_S6545016",
+    "instruction": "Patient S6545016's alkaline phosphatase was 87.0 U/L on 2022-08-08. elevated alkaline phosphatase is defined as alkaline phosphatase > 147 U/L. Query all subsequent alkaline phosphatase (ALKP) values from the FHIR server. Did the patient develop elevated alkaline phosphatase? If yes, provide the date of the first measurement that crosses the 147 U/L threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "yes",
+      "2022-10-31"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_crossing_alb_2p8_S6545016_neg",
+    "instruction": "Patient S6545016's albumin was 4.7 g/dL on 2022-08-08. severe hypoalbuminemia is defined as albumin < 2.8 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop severe hypoalbuminemia? If yes, provide the date. If no, answer 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_ast_S0674240",
+    "instruction": "For patient S0674240, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded AST value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded AST value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 1",
+      "Grade 1",
+      "stayed the same"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_peak_ast_S0674240",
+    "instruction": "For patient S0674240, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's AST reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 2",
+      "2023-07-01"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_alt_S0674240",
+    "instruction": "For patient S0674240, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded ALT value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded ALT value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Grade 1",
+      "Grade 1",
+      "stayed the same"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_peak_alt_S0674240",
+    "instruction": "For patient S0674240, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's ALT reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Grade 2",
+      "2023-07-01"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_tbil_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 1.0 mg/dL:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded total bilirubin value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded total bilirubin value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Normal",
+      "Grade 3",
+      "worsened"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_peak_tbil_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 1.0 mg/dL, what was the WORST (highest) CTCAE grade that this patient's total bilirubin reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Grade 4",
+      "2023-09-15"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_alkp_S0674240",
+    "instruction": "For patient S0674240, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 147 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded alkaline phosphatase value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded alkaline phosphatase value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Normal",
+      "Grade 2",
+      "worsened"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_peak_alkp_S0674240",
+    "instruction": "For patient S0674240, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 147 U/L, what was the WORST (highest) CTCAE grade that this patient's alkaline phosphatase reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Grade 3",
+      "2023-05-19"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_ctcae_ast_S2033286",
+    "instruction": "For patient S2033286, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded AST value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded AST value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Normal",
+      "Grade 2",
+      "worsened"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_peak_ast_S2033286",
+    "instruction": "For patient S2033286, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's AST reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 3",
+      "2023-03-03"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_alt_S2033286",
+    "instruction": "For patient S2033286, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded ALT value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded ALT value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Normal",
+      "Grade 1",
+      "worsened"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_peak_alt_S2033286",
+    "instruction": "For patient S2033286, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's ALT reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Grade 3",
+      "2023-03-03"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_tbil_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 1.0 mg/dL:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded total bilirubin value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded total bilirubin value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Normal",
+      "Grade 3",
+      "worsened"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_peak_tbil_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 1.0 mg/dL, what was the WORST (highest) CTCAE grade that this patient's total bilirubin reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Grade 3",
+      "2023-11-12"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_alkp_S2033286",
+    "instruction": "For patient S2033286, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 147 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded alkaline phosphatase value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded alkaline phosphatase value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Normal",
+      "Grade 1",
+      "worsened"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_peak_alkp_S2033286",
+    "instruction": "For patient S2033286, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 147 U/L, what was the WORST (highest) CTCAE grade that this patient's alkaline phosphatase reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Grade 2",
+      "2023-11-07"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_ctcae_ast_S6488980",
+    "instruction": "For patient S6488980, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded AST value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded AST value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_ctcae_peak_ast_S6488980",
+    "instruction": "For patient S6488980, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's AST reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 1",
+      "2023-07-05"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_ctcae_alt_S6488980",
+    "instruction": "For patient S6488980, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded ALT value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded ALT value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_ctcae_peak_alt_S6488980",
+    "instruction": "For patient S6488980, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's ALT reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Grade 1",
+      "2023-07-05"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_ctcae_tbil_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 1.0 mg/dL:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded total bilirubin value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded total bilirubin value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_ctcae_alkp_S6488980",
+    "instruction": "For patient S6488980, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 147 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded alkaline phosphatase value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded alkaline phosphatase value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Grade 1",
+      "Grade 1",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_ctcae_peak_alkp_S6488980",
+    "instruction": "For patient S6488980, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 147 U/L, what was the WORST (highest) CTCAE grade that this patient's alkaline phosphatase reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Grade 2",
+      "2023-07-05"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_ctcae_ast_S6500497",
+    "instruction": "For patient S6500497, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded AST value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded AST value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_ctcae_peak_ast_S6500497",
+    "instruction": "For patient S6500497, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's AST reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 1",
+      "2021-08-17"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_ctcae_alt_S6500497",
+    "instruction": "For patient S6500497, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded ALT value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded ALT value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_ctcae_peak_alt_S6500497",
+    "instruction": "For patient S6500497, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's ALT reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Grade 1",
+      "2020-08-14"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_ctcae_tbil_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 1.0 mg/dL:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded total bilirubin value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded total bilirubin value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_ctcae_alkp_S6500497",
+    "instruction": "For patient S6500497, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 147 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded alkaline phosphatase value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded alkaline phosphatase value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_ctcae_ast_S6539215",
+    "instruction": "For patient S6539215, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded AST value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded AST value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 1",
+      "Normal",
+      "improved"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_ctcae_peak_ast_S6539215",
+    "instruction": "For patient S6539215, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's AST reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 1",
+      "2023-11-11"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_ctcae_alt_S6539215",
+    "instruction": "For patient S6539215, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded ALT value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded ALT value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_ctcae_tbil_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 1.0 mg/dL:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded total bilirubin value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded total bilirubin value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_ctcae_peak_tbil_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 1.0 mg/dL, what was the WORST (highest) CTCAE grade that this patient's total bilirubin reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Grade 2",
+      "2023-10-08"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_ctcae_alkp_S6539215",
+    "instruction": "For patient S6539215, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 147 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded alkaline phosphatase value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded alkaline phosphatase value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_ctcae_ast_S6545016",
+    "instruction": "For patient S6545016, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded AST value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded AST value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Normal",
+      "Grade 1",
+      "worsened"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_peak_ast_S6545016",
+    "instruction": "For patient S6545016, query all AST (AST) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's AST reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for AST is 'AST'.",
+    "sol": [
+      "Grade 1",
+      "2022-10-17"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_alt_S6545016",
+    "instruction": "For patient S6545016, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 40 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded ALT value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded ALT value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_peak_alt_S6545016",
+    "instruction": "For patient S6545016, query all ALT (ALT) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 40 U/L, what was the WORST (highest) CTCAE grade that this patient's ALT reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u226440 U/L\n- Grade 1: >40 to 120 U/L (>ULN to 3\u00d7ULN), Grade 2: >120 to 200 U/L (>3\u00d7 to 5\u00d7ULN), Grade 3: >200 to 800 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >800 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for ALT is 'ALT'.",
+    "sol": [
+      "Grade 2",
+      "2022-10-17"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_tbil_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 1.0 mg/dL:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded total bilirubin value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded total bilirubin value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Grade 2",
+      "Normal",
+      "improved"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_peak_tbil_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 1.0 mg/dL, what was the WORST (highest) CTCAE grade that this patient's total bilirubin reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u22641.0 mg/dL\n- Grade 1: >1.0 to 1.5 mg/dL (>ULN to 1.5\u00d7ULN), Grade 2: >1.5 to 3.0 mg/dL (>1.5\u00d7 to 3\u00d7ULN), Grade 3: >3.0 to 10.0 mg/dL (>3\u00d7 to 10\u00d7ULN), Grade 4: >10.0 mg/dL (>10\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "Grade 2",
+      "2022-08-28"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_alkp_S6545016",
+    "instruction": "For patient S6545016, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading criteria with ULN = 147 U/L:\n\n(a) What CTCAE grade corresponds to the EARLIEST recorded alkaline phosphatase value?\n(b) What CTCAE grade corresponds to the MOST RECENT recorded alkaline phosphatase value?\n(c) Did the grade worsen, improve, or stay the same over time?\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Normal",
+      "Normal",
+      "stayed the same"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_ctcae_peak_alkp_S6545016",
+    "instruction": "For patient S6545016, query all alkaline phosphatase (ALKP) lab results from the FHIR server. Using CTCAE v5.0 grading with ULN = 147 U/L, what was the WORST (highest) CTCAE grade that this patient's alkaline phosphatase reached at any point? Provide the grade and the date of the peak value.\n\nCTCAE grading scale:\n- Normal: \u2264147 U/L\n- Grade 1: >147 to 367 U/L (>ULN to 2.5\u00d7ULN), Grade 2: >367 to 735 U/L (>2.5\u00d7 to 5\u00d7ULN), Grade 3: >735 to 2940 U/L (>5\u00d7 to 20\u00d7ULN), Grade 4: >2940 U/L (>20\u00d7ULN)",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for alkaline phosphatase is 'ALKP'.",
+    "sol": [
+      "Grade 1",
+      "2022-12-12"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_deritis_S0674240",
+    "instruction": "For patient S0674240, query the most recent AST and ALT values from the FHIR server. Calculate the AST/ALT ratio (De Ritis ratio). Based on the result, classify it as:\n- 0.7\u20131.0: Normal\n- >1.0: Suggests fibrosis/cirrhosis\n- >1.5: Strongly suggestive of alcohol-related liver damage\n- >2.0: Classic for alcoholic hepatitis\n- <0.7: Suggests non-alcoholic etiology\n\nProvide the ratio (rounded to 2 decimal places) and the classification.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. Lab codes: AST for AST, ALT for ALT.",
+    "sol": [
+      "1.13",
+      "suggests fibrosis/cirrhosis"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_deritis_S2033286",
+    "instruction": "For patient S2033286, query the most recent AST and ALT values from the FHIR server. Calculate the AST/ALT ratio (De Ritis ratio). Based on the result, classify it as:\n- 0.7\u20131.0: Normal\n- >1.0: Suggests fibrosis/cirrhosis\n- >1.5: Strongly suggestive of alcohol-related liver damage\n- >2.0: Classic for alcoholic hepatitis\n- <0.7: Suggests non-alcoholic etiology\n\nProvide the ratio (rounded to 2 decimal places) and the classification.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. Lab codes: AST for AST, ALT for ALT.",
+    "sol": [
+      "2.41",
+      "classic for alcoholic hepatitis"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_deritis_S6488980",
+    "instruction": "For patient S6488980, query the most recent AST and ALT values from the FHIR server. Calculate the AST/ALT ratio (De Ritis ratio). Based on the result, classify it as:\n- 0.7\u20131.0: Normal\n- >1.0: Suggests fibrosis/cirrhosis\n- >1.5: Strongly suggestive of alcohol-related liver damage\n- >2.0: Classic for alcoholic hepatitis\n- <0.7: Suggests non-alcoholic etiology\n\nProvide the ratio (rounded to 2 decimal places) and the classification.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. Lab codes: AST for AST, ALT for ALT.",
+    "sol": [
+      "1.70",
+      "strongly suggestive of alcohol-related liver damage"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_deritis_S6500497",
+    "instruction": "For patient S6500497, query the most recent AST and ALT values from the FHIR server. Calculate the AST/ALT ratio (De Ritis ratio). Based on the result, classify it as:\n- 0.7\u20131.0: Normal\n- >1.0: Suggests fibrosis/cirrhosis\n- >1.5: Strongly suggestive of alcohol-related liver damage\n- >2.0: Classic for alcoholic hepatitis\n- <0.7: Suggests non-alcoholic etiology\n\nProvide the ratio (rounded to 2 decimal places) and the classification.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. Lab codes: AST for AST, ALT for ALT.",
+    "sol": [
+      "1.00",
+      "normal range"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_deritis_S6539215",
+    "instruction": "For patient S6539215, query the most recent AST and ALT values from the FHIR server. Calculate the AST/ALT ratio (De Ritis ratio). Based on the result, classify it as:\n- 0.7\u20131.0: Normal\n- >1.0: Suggests fibrosis/cirrhosis\n- >1.5: Strongly suggestive of alcohol-related liver damage\n- >2.0: Classic for alcoholic hepatitis\n- <0.7: Suggests non-alcoholic etiology\n\nProvide the ratio (rounded to 2 decimal places) and the classification.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. Lab codes: AST for AST, ALT for ALT.",
+    "sol": [
+      "1.50",
+      "suggests fibrosis/cirrhosis"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_deritis_S6545016",
+    "instruction": "For patient S6545016, query the most recent AST and ALT values from the FHIR server. Calculate the AST/ALT ratio (De Ritis ratio). Based on the result, classify it as:\n- 0.7\u20131.0: Normal\n- >1.0: Suggests fibrosis/cirrhosis\n- >1.5: Strongly suggestive of alcohol-related liver damage\n- >2.0: Classic for alcoholic hepatitis\n- <0.7: Suggests non-alcoholic etiology\n\nProvide the ratio (rounded to 2 decimal places) and the classification.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. Lab codes: AST for AST, ALT for ALT.",
+    "sol": [
+      "2.00",
+      "strongly suggestive of alcohol-related liver damage"
+    ],
+    "eval_MRN": "S6545016"
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "task_threshold_alb_3p5_S0674240",
+    "instruction": "For patient S0674240, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S0674240",
+    "instruction": "For patient S0674240, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S0674240",
+    "instruction": "For patient S0674240, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_plt_150_S0674240",
+    "instruction": "For patient S0674240, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S2033286",
+    "instruction": "For patient S2033286, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S2033286",
+    "instruction": "For patient S2033286, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S2033286",
+    "instruction": "For patient S2033286, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_plt_150_S2033286",
+    "instruction": "For patient S2033286, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S2033286"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6488980",
+    "instruction": "For patient S6488980, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6488980",
+    "instruction": "For patient S6488980, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6488980",
+    "instruction": "For patient S6488980, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_plt_150_S6488980",
+    "instruction": "For patient S6488980, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6488980"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6500497",
+    "instruction": "For patient S6500497, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6500497",
+    "instruction": "For patient S6500497, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6500497",
+    "instruction": "For patient S6500497, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_plt_150_S6500497",
+    "instruction": "For patient S6500497, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6500497"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6539215",
+    "instruction": "For patient S6539215, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6539215",
+    "instruction": "For patient S6539215, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6539215",
+    "instruction": "For patient S6539215, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_plt_150_S6539215",
+    "instruction": "For patient S6539215, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6539215"
+  },
+  {
+    "id": "task_threshold_alb_3p5_S6545016",
+    "instruction": "For patient S6545016, query all albumin (ALB) lab results from the FHIR server. Does this patient develop hypoalbuminemia (albumin < 3.5 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_alb_2p8_S6545016",
+    "instruction": "For patient S6545016, query all albumin (ALB) lab results from the FHIR server. Does this patient develop severe hypoalbuminemia (albumin < 2.8 g/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_3p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop clinical jaundice (total bilirubin > 3.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_2p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_5p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop severe hyperbilirubinemia (total bilirubin > 5.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_tbil_10p0_S6545016",
+    "instruction": "For patient S6545016, query all total bilirubin (TBIL) lab results from the FHIR server. Does this patient develop critical hyperbilirubinemia (total bilirubin > 10.0 mg/dL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S6545016"
+  },
+  {
+    "id": "task_threshold_plt_150_S6545016",
+    "instruction": "For patient S6545016, query all platelet count (PLT) lab results from the FHIR server. Does this patient develop thrombocytopenia (platelet count < 150 K/uL) at any point during the recorded time range? Answer 'yes' or 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "yes"
+    ],
+    "eval_MRN": "S6545016"
+  }
+]

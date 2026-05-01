@@ -1,0 +1,337 @@
+{
+    "total": 42,
+    "validation": {
+        "running": 0.0,
+        "completed": 0.9047619047619048,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.09523809523809523,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 4.428571428571429,
+        "max_history_length": 10,
+        "min_history_length": 2
+    },
+    "custom": {
+        "success rate": 0.8809523809523809,
+        "raw_results": [
+            {
+                "index": 1,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 0,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"yes\"])\n\nThe patient S2033286 developed severe hypoalbuminemia (albumin < 2.8 g/dL) at multiple points during the recorded time range. Here are the values that indicate severe hypoalbuminemia:\n\n- 2023-09-03: 2.6 g/dL\n- 2023-09-18: 2.7 g/dL\n- 2023-10-16: 2.5 g/dL\n- 2023-10-24: 2.5 g/dL\n- 2023-10-25: 2.5 g/dL\n- 2023-11-11: 1.8 g/dL\n- 2023-11-12: 1.6 g/dL\n\nThe most severe hypoalbuminemia occurred on 2023-11-12 with an albumin level of 1.6 g/dL, which is significantly below the 2.8 g/dL threshold for severe hypoalbuminemia"
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 18,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 19,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 21,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 22,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 23,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 24,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 20,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 25,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 26,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 28,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 27,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 29,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 31,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 30,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 32,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 34,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 33,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 35,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 38,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 36,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 37,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 41,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 39,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 40,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            }
+        ],
+        "metric_accuracy": 0.8809523809523809,
+        "metric_correct": 37,
+        "metric_total": 42,
+        "metric_accuracy_alb": 0.8333333333333334,
+        "metric_accuracy_tbil": 0.875,
+        "metric_accuracy_plt": 1.0,
+        "metric_accuracy_patient_S0674240": 0.7142857142857143,
+        "metric_accuracy_patient_S2033286": 0.7142857142857143,
+        "metric_accuracy_patient_S6488980": 1.0,
+        "metric_accuracy_patient_S6500497": 1.0,
+        "metric_accuracy_patient_S6539215": 1.0,
+        "metric_accuracy_patient_S6545016": 0.8571428571428571,
+        "metric_yes_expected": 20,
+        "metric_no_expected": 22,
+        "metric_sensitivity": 1.0,
+        "metric_specificity": 1.0,
+        "metric_tp": 17,
+        "metric_tn": 20,
+        "metric_fp": 0,
+        "metric_fn": 0,
+        "metric_num_cases": 42
+    },
+    "replicate": 1
+}

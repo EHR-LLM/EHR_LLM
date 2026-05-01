@@ -1,0 +1,166 @@
+{
+    "total": 18,
+    "validation": {
+        "running": 0.0,
+        "completed": 1.0,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.0,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 7.333333333333333,
+        "max_history_length": 8,
+        "min_history_length": 4
+    },
+    "custom": {
+        "success rate": 0.9444444444444444,
+        "raw_results": [
+            {
+                "index": 0,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S0674240\", \"date\": \"2023-07-01\", \"bilirubin_raw\": 5.0, \"inr_raw\": 1.2, \"creatinine_raw\": 0.71, \"bilirubin_used\": 5.0, \"inr_used\": 1.2, \"creatinine_used\": 1.0, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 14.56}"
+            },
+            {
+                "index": 1,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S0674240\", \"date\": \"2023-09-15\", \"bilirubin_raw\": 19.1, \"inr_raw\": 1.7, \"creatinine_raw\": 1.09, \"bilirubin_used\": 19.1, \"inr_used\": 1.7, \"creatinine_used\": 1.09, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": false, \"meld_score\": 24.34}"
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S0674240\", \"date\": \"2023-11-03\", \"bilirubin_raw\": 13.1, \"inr_raw\": 1.5, \"creatinine_raw\": 0.79, \"bilirubin_used\": 13.1, \"inr_used\": 1.5, \"creatinine_used\": 1.0, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 20.7}"
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "{\"patient_id\": \"S2033286\", \"date\": \"2023-10-24\", \"bilirubin_raw\": 2.6, \"inr_raw\": 1.3, \"creatinine_raw\": 0.61, \"bilirubin_used\": 2.6, \"inr_used\": 1.3, \"creatinine_used\": 1.0, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 13.98}"
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S2033286\", \"date\": \"2023-08-03\", \"bilirubin_raw\": 1.5, \"inr_raw\": 1.0, \"creatinine_raw\": 0.7, \"bilirubin_used\": 1.5, \"inr_used\": 1.0, \"creatinine_used\": 1.0, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 7.96}"
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6488980\", \"date\": \"2023-03-06\", \"bilirubin_raw\": 0.6, \"inr_raw\": 1.1, \"creatinine_raw\": 0.61, \"bilirubin_used\": 1.0, \"inr_used\": 1.1, \"creatinine_used\": 1.0, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 7.5}"
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S2033286\", \"date\": \"2023-11-11\", \"bilirubin_raw\": 4.5, \"inr_raw\": 1.7, \"creatinine_raw\": 0.88, \"bilirubin_used\": 4.5, \"inr_used\": 1.7, \"creatinine_used\": 1.0, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 18.06}"
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6488980\", \"date\": \"2023-03-22\", \"bilirubin_raw\": 0.4, \"inr_raw\": 1.3, \"creatinine_raw\": 0.93, \"bilirubin_used\": 1.0, \"inr_used\": 1.3, \"creatinine_used\": 1.0, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 9.37}"
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6488980\", \"date\": \"2023-10-31\", \"bilirubin_raw\": 0.4, \"inr_raw\": 1.7, \"creatinine_raw\": 0.41, \"bilirubin_used\": 1.0, \"inr_used\": 1.7, \"creatinine_used\": 1.0, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 12.37}"
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6500497\", \"date\": \"2020-08-14\", \"bilirubin_raw\": 0.4, \"inr_raw\": 1.0, \"creatinine_raw\": 0.82, \"bilirubin_used\": 1.0, \"inr_used\": 1.0, \"creatinine_used\": 1.0, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 6.43}"
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6500497\", \"date\": \"2022-01-04\", \"bilirubin_raw\": 0.2, \"inr_raw\": 1.0, \"creatinine_raw\": 0.75, \"bilirubin_used\": 1.0, \"inr_used\": 1.0, \"creatinine_used\": 1.0, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 6.43}"
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6500497\", \"date\": \"2023-08-23\", \"bilirubin_raw\": 0.3, \"inr_raw\": 1.0, \"creatinine_raw\": 0.86, \"bilirubin_used\": 1.0, \"inr_used\": 1.0, \"creatinine_used\": 1.0, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 6.43}"
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6539215\", \"date\": \"2023-09-03\", \"bilirubin_raw\": 0.6, \"inr_raw\": 1.7, \"creatinine_raw\": 2.33, \"bilirubin_used\": 1.0, \"inr_used\": 1.7, \"creatinine_used\": 2.33, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": false, \"meld_score\": 20.46}"
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6539215\", \"date\": \"2023-09-19\", \"bilirubin_raw\": 1.2, \"inr_raw\": 1.5, \"creatinine_raw\": 1.45, \"bilirubin_used\": 1.2, \"inr_used\": 1.5, \"creatinine_used\": 1.45, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": false, \"meld_score\": 15.22}"
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6539215\", \"date\": \"2023-10-27\", \"bilirubin_raw\": 1.6, \"inr_raw\": 2.0, \"creatinine_raw\": 2.52, \"bilirubin_used\": 1.6, \"inr_used\": 2.0, \"creatinine_used\": 2.52, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": false, \"meld_score\": 24.82}"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6545016\", \"date\": \"2023-07-06\", \"bilirubin_raw\": 1.9, \"inr_raw\": 1.2, \"creatinine_raw\": 0.43, \"bilirubin_used\": 1.9, \"inr_used\": 1.2, \"creatinine_used\": 1.0, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 10.9}"
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6545016\", \"date\": \"2023-09-25\", \"bilirubin_raw\": 1.3, \"inr_raw\": 1.0, \"creatinine_raw\": 0.58, \"bilirubin_used\": 1.3, \"inr_used\": 1.0, \"creatinine_used\": 1.0, \"bilirubin_corrected\": false, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 7.42}"
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "{\"patient_id\": \"S6545016\", \"date\": \"2023-11-05\", \"bilirubin_raw\": 0.4, \"inr_raw\": 1.0, \"creatinine_raw\": 0.58, \"bilirubin_used\": 1.0, \"inr_used\": 1.0, \"creatinine_used\": 1.0, \"bilirubin_corrected\": true, \"inr_corrected\": false, \"creatinine_corrected\": true, \"meld_score\": 6.43}"
+            }
+        ],
+        "metric_patient_id_correct": 1.0,
+        "metric_date_correct": 1.0,
+        "metric_bilirubin_raw_correct": 1.0,
+        "metric_inr_raw_correct": 1.0,
+        "metric_creatinine_raw_correct": 1.0,
+        "metric_bilirubin_used_correct": 1.0,
+        "metric_inr_used_correct": 1.0,
+        "metric_creatinine_used_correct": 1.0,
+        "metric_bilirubin_corrected_correct": 1.0,
+        "metric_inr_corrected_correct": 1.0,
+        "metric_creatinine_corrected_correct": 1.0,
+        "metric_meld_score_correct": 0.9444444444444444,
+        "metric_full_case_success": 0.9444444444444444,
+        "metric_all_lab_raws_correct": 1.0,
+        "metric_all_lab_useds_correct": 1.0,
+        "metric_all_corrections_correct": 1.0,
+        "metric_num_cases": 18,
+        "metric_avg_fields_correct": 0.9953703703703703
+    },
+    "replicate": 3
+}

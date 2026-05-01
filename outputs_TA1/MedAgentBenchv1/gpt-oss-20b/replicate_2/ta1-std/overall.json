@@ -1,0 +1,337 @@
+{
+    "total": 42,
+    "validation": {
+        "running": 0.0,
+        "completed": 0.30952380952380953,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.6904761904761905,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 2.9047619047619047,
+        "max_history_length": 4,
+        "min_history_length": 2
+    },
+    "custom": {
+        "success rate": 0.30952380952380953,
+        "raw_results": [
+            {
+                "index": 0,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "['yes']"
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 1,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "['yes']"
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 18,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 19,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 21,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 22,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 23,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 24,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 20,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 26,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 27,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 25,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 29,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 30,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 31,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 28,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 33,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 32,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 34,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 36,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 37,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 38,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 39,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 40,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 41,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\"]"
+            },
+            {
+                "index": 35,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            }
+        ],
+        "metric_accuracy": 0.30952380952380953,
+        "metric_correct": 13,
+        "metric_total": 42,
+        "metric_accuracy_alb": 0.08333333333333333,
+        "metric_accuracy_tbil": 0.3333333333333333,
+        "metric_accuracy_plt": 0.6666666666666666,
+        "metric_accuracy_patient_S0674240": 0.42857142857142855,
+        "metric_accuracy_patient_S2033286": 0.2857142857142857,
+        "metric_accuracy_patient_S6488980": 0.14285714285714285,
+        "metric_accuracy_patient_S6500497": 0.5714285714285714,
+        "metric_accuracy_patient_S6539215": 0.2857142857142857,
+        "metric_accuracy_patient_S6545016": 0.14285714285714285,
+        "metric_yes_expected": 20,
+        "metric_no_expected": 22,
+        "metric_sensitivity": 1.0,
+        "metric_specificity": 1.0,
+        "metric_tp": 5,
+        "metric_tn": 8,
+        "metric_fp": 0,
+        "metric_fn": 0,
+        "metric_num_cases": 42
+    },
+    "replicate": 2
+}

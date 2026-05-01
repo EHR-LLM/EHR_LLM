@@ -12,6 +12,23 @@ medagentbench-std:
     func_file: "data/medagentbench/funcs_v1.json"
 
 # ================================================================================
+# TA1: Binary Threshold Classification (yes/no)
+# TA3: Threshold Crossing + Date Detection (yes/no + date)
+# ================================================================================
+
+ta1-std:
+  parameters:
+    name: ta1-std
+    data_file: "data/medagentbench/test_data_ta1.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+
+ta3-std:
+  parameters:
+    name: ta3-std
+    data_file: "data/medagentbench/test_data_ta3.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+
+# ================================================================================
 # NO-CALCULATOR MODE - model computes score itself
 # Standard naming: {score}-std maps to outputs/{Score}Bench_no_calc/
 # ================================================================================

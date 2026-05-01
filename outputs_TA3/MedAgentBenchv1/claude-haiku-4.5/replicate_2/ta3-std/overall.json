@@ -1,0 +1,261 @@
+{
+    "total": 30,
+    "validation": {
+        "running": 0.0,
+        "completed": 1.0,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.0,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 4.0,
+        "max_history_length": 4,
+        "min_history_length": 4
+    },
+    "custom": {
+        "success rate": 0.2,
+        "raw_results": [
+            {
+                "index": 0,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\n  \"Yes, the patient developed hypoalbuminemia (albumin < 3.5 g/dL).\",\n  \"The first measurement that crossed the 3.5 g/dL threshold occurred on 2023-02-03 with an albumin value of 2.8 g/dL.\"\n]"
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S0674240 developed clinical jaundice\", \"Date of first measurement crossing 3.0 mg/dL threshold: 2023-07-04\", \"Value on that date: 4.1 mg/dL\"]"
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S0674240 developed moderate hyperbilirubinemia\", \"2023-07-04\"]"
+            },
+            {
+                "index": 1,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S0674240 developed severe hypoalbuminemia\", \"2023-09-19\"]"
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S0674240 developed severe hyperbilirubinemia\", \"2023-09-14\"]"
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S2033286 developed hypoalbuminemia\", \"2023-03-26\"]"
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S2033286 developed severe hypoalbuminemia\", \"First date crossing 2.8 g/dL threshold: 2023-09-03\", \"Albumin value on that date: 2.6 g/dL\"]"
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed moderate hyperbilirubinemia (total bilirubin > 2.0 mg/dL). The first measurement that crossed the 2.0 mg/dL threshold was 2.1 mg/dL on 2023-07-14.\"]"
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed clinical jaundice\", \"2023-11-10\"]"
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed thrombocytopenia\", \"2023-06-16\", \"143.0 K/uL\"]"
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S6488980 developed hypoalbuminemia\", \"2023-10-14\", \"3.1 g/dL\"]"
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed elevated alkaline phosphatase. The first measurement that crossed the 147 U/L threshold was on 2023-03-06 with a value of 204.0 U/L.\"]"
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hypoalbuminemia\", \"2023-10-31\"]"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed mildly prolonged INR\", \"2023-10-31\"]"
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 18,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient had hypoalbuminemia (albumin < 3.5 g/dL) starting from 2023-09-03 with a value of 2.3 g/dL. The patient did not develop hypoalbuminemia after this date but was already hypoalbuminemic. Most subsequent values remained below 3.5 g/dL, with only two exceptions: 2023-10-07 (3.7 g/dL) and 2023-10-08 (3.6 g/dL).\"]"
+            },
+            {
+                "index": 19,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hypoalbuminemia\", \"2023-09-04\", \"The first albumin measurement below 2.8 g/dL was 2.1 g/dL on 2023-09-04\"]"
+            },
+            {
+                "index": 20,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S6539215 developed moderate hyperbilirubinemia\", \"2023-10-08\", \"2.2 mg/dL\"]"
+            },
+            {
+                "index": 21,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed thrombocytopenia. The patient already had thrombocytopenia at the initial measurement on 2023-09-04 with a platelet count of 94.0 K/uL (below the 150 K/uL threshold). The first measurement that crosses below the 150 K/uL threshold is 2023-09-04 with 94.0 K/uL.\"]"
+            },
+            {
+                "index": 22,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient had moderate thrombocytopenia at the initial measurement on 2023-09-04 with a platelet count of 94.0 K/uL. However, all subsequent measurements from 2023-09-05 onwards show platelet counts above 100 K/uL, indicating recovery from the moderate thrombocytopenia. The patient did not develop moderate thrombocytopenia again after the initial measurement.\"]"
+            },
+            {
+                "index": 23,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 24,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed hypoalbuminemia\", \"2023-10-10\"]"
+            },
+            {
+                "index": 25,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed thrombocytopenia\", \"2023-01-30\"]"
+            },
+            {
+                "index": 26,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed moderate thrombocytopenia\", \"2023-01-30\"]"
+            },
+            {
+                "index": 27,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"No\", \"The patient did not develop moderate ALT elevation (CTCAE Grade 2). All ALT values remained below the 120 U/L threshold, with the highest measurement being 44.0 U/L on 2022-12-26.\"]"
+            },
+            {
+                "index": 29,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 28,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, patient S6545016 developed elevated alkaline phosphatase\", \"2022-10-31\", \"First elevated ALKP value: 159.0 U/L on 2022-10-31\"]"
+            }
+        ],
+        "metric_accuracy": 0.2,
+        "metric_answer_accuracy": 0.2,
+        "metric_date_accuracy": 0.4,
+        "metric_correct": 6,
+        "metric_answer_correct": 6,
+        "metric_date_correct": 12,
+        "metric_total": 30,
+        "metric_accuracy_alb": 0.18181818181818182,
+        "metric_accuracy_tbil": 0.3333333333333333,
+        "metric_accuracy_plt": 0.16666666666666666,
+        "metric_accuracy_alkp": 0.0,
+        "metric_accuracy_inr": 0.0,
+        "metric_accuracy_alt": 0.0,
+        "metric_accuracy_patient_S0674240": 0.16666666666666666,
+        "metric_accuracy_patient_S2033286": 0.16666666666666666,
+        "metric_accuracy_patient_S6488980": 0.2,
+        "metric_accuracy_patient_S6500497": 1.0,
+        "metric_accuracy_patient_S6539215": 0.16666666666666666,
+        "metric_accuracy_patient_S6545016": 0.16666666666666666,
+        "metric_yes_expected": 24,
+        "metric_no_expected": 6,
+        "metric_sensitivity": 0.0,
+        "metric_specificity": 1.0,
+        "metric_tp": 0,
+        "metric_tn": 6,
+        "metric_fp": 0,
+        "metric_fn": 1,
+        "metric_date_accuracy_positive": 0.25,
+        "metric_num_cases": 30
+    },
+    "replicate": 2
+}

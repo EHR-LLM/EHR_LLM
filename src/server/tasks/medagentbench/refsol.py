@@ -479,6 +479,312 @@ def compute_aggregate_metrics(results: list) -> dict:
     return metrics
 
 
+# --------------------------------------------------------------------------
+# TA1: Binary Threshold Classification Evaluator
+# --------------------------------------------------------------------------
+
+def _parse_ta1_answer(result) -> Optional[str]:
+    """
+    Extract the yes/no answer from a TA1 FINISH output.
+    Handles formats like: FINISH(["yes"]), ["yes"], "yes", yes
+    """
+    raw = None
+    if isinstance(result, dict):
+        raw = result.get("result")
+    elif hasattr(result, "result"):
+        raw = result.result
+    else:
+        raw = result
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    # Strip FINISH(...) wrapper
+    m = re.match(r"FINISH\(\s*(.*?)\s*\)$", s, re.DOTALL)
+    if m:
+        s = m.group(1).strip()
+    # Try to parse as JSON list
+    try:
+        parsed = json.loads(s)
+        if isinstance(parsed, list) and len(parsed) >= 1:
+            return str(parsed[0]).strip().lower()
+        if isinstance(parsed, str):
+            return parsed.strip().lower()
+    except (json.JSONDecodeError, TypeError):
+        pass
+    # Try stripping quotes and brackets manually
+    s = s.strip("[]\"' ")
+    if s.lower() in ("yes", "no"):
+        return s.lower()
+    return None
+
+
+def task_ta1(case_data: dict, result) -> dict:
+    """
+    Evaluate a single TA1 binary threshold task.
+    Returns dict with correct flag and metadata.
+    """
+    expected = case_data.get("sol", [])
+    if isinstance(expected, list) and len(expected) >= 1:
+        expected_answer = str(expected[0]).strip().lower()
+    else:
+        expected_answer = str(expected).strip().lower()
+
+    agent_answer = _parse_ta1_answer(result)
+
+    correct = (agent_answer is not None and agent_answer == expected_answer)
+
+    return {
+        "correct": correct,
+        "expected": expected_answer,
+        "agent_answer": agent_answer,
+        "task_id": case_data.get("id", ""),
+    }
+
+
+def compute_ta1_metrics(eval_results: list, case_data_list: list) -> dict:
+    """
+    Compute aggregate metrics for TA1 binary threshold tasks.
+    """
+    if not eval_results:
+        return {}
+
+    n = len(eval_results)
+    correct_count = sum(1 for r in eval_results if r.get("correct", False))
+
+    metrics = {
+        "metric_accuracy": correct_count / n,
+        "metric_correct": correct_count,
+        "metric_total": n,
+    }
+
+    # Per-biomarker accuracy
+    biomarker_stats = {}
+    for r, case in zip(eval_results, case_data_list):
+        task_id = case.get("id", "")
+        # Extract biomarker from task_id like task_threshold_alb_3p5_S0674240
+        parts = task_id.replace("task_threshold_", "").split("_")
+        if len(parts) >= 1:
+            biomarker = parts[0]
+            if biomarker not in biomarker_stats:
+                biomarker_stats[biomarker] = {"correct": 0, "total": 0}
+            biomarker_stats[biomarker]["total"] += 1
+            if r.get("correct", False):
+                biomarker_stats[biomarker]["correct"] += 1
+
+    for bio, stats in biomarker_stats.items():
+        metrics[f"metric_accuracy_{bio}"] = stats["correct"] / stats["total"] if stats["total"] > 0 else 0.0
+
+    # Per-patient accuracy
+    patient_stats = {}
+    for r, case in zip(eval_results, case_data_list):
+        mrn = case.get("eval_MRN", "unknown")
+        if mrn not in patient_stats:
+            patient_stats[mrn] = {"correct": 0, "total": 0}
+        patient_stats[mrn]["total"] += 1
+        if r.get("correct", False):
+            patient_stats[mrn]["correct"] += 1
+
+    for mrn, stats in patient_stats.items():
+        metrics[f"metric_accuracy_patient_{mrn}"] = stats["correct"] / stats["total"] if stats["total"] > 0 else 0.0
+
+    # Yes/No answer distribution
+    yes_expected = sum(1 for case in case_data_list if case.get("sol", [""])[0].lower() == "yes")
+    no_expected = n - yes_expected
+    metrics["metric_yes_expected"] = yes_expected
+    metrics["metric_no_expected"] = no_expected
+
+    # Sensitivity (true positive rate) and Specificity (true negative rate)
+    tp = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "yes" and c.get("sol", [""])[0].lower() == "yes")
+    tn = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "no" and c.get("sol", [""])[0].lower() == "no")
+    fp = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "yes" and c.get("sol", [""])[0].lower() == "no")
+    fn = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "no" and c.get("sol", [""])[0].lower() == "yes")
+
+    metrics["metric_sensitivity"] = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+    metrics["metric_specificity"] = tn / (tn + fp) if (tn + fp) > 0 else 0.0
+    metrics["metric_tp"] = tp
+    metrics["metric_tn"] = tn
+    metrics["metric_fp"] = fp
+    metrics["metric_fn"] = fn
+    metrics["metric_num_cases"] = n
+
+    return metrics
+
+
+# --------------------------------------------------------------------------
+# TA3: Threshold Crossing + Date Detection Evaluator
+# --------------------------------------------------------------------------
+
+def _parse_ta3_answer(result) -> tuple:
+    """
+    Extract the yes/no answer and optional date from a TA3 FINISH output.
+    Returns (answer, date) where answer is 'yes'/'no'/None and date is str/None.
+    Handles: FINISH(["yes","2023-01-20"]), ["yes","2023-01-20"], FINISH(["no"]), etc.
+    """
+    raw = None
+    if isinstance(result, dict):
+        raw = result.get("result")
+    elif hasattr(result, "result"):
+        raw = result.result
+    else:
+        raw = result
+    if raw is None:
+        return (None, None)
+    s = str(raw).strip()
+    # Strip FINISH(...) wrapper
+    m = re.match(r"FINISH\(\s*(.*?)\s*\)$", s, re.DOTALL)
+    if m:
+        s = m.group(1).strip()
+    # Try to parse as JSON list
+    try:
+        parsed = json.loads(s)
+        if isinstance(parsed, list):
+            answer = str(parsed[0]).strip().lower() if len(parsed) >= 1 else None
+            date = str(parsed[1]).strip() if len(parsed) >= 2 else None
+            return (answer, date)
+        if isinstance(parsed, str):
+            return (parsed.strip().lower(), None)
+    except (json.JSONDecodeError, TypeError):
+        pass
+    # Manual bracketed list parsing: ["yes", "2023-01-20"]
+    list_match = re.match(r'\[\s*["\']?(yes|no)["\']?\s*(?:,\s*["\']?(\d{4}-\d{2}-\d{2})["\']?\s*)?\]', s, re.IGNORECASE)
+    if list_match:
+        answer = list_match.group(1).lower()
+        date = list_match.group(2)
+        return (answer, date)
+    # Plain text
+    s_lower = s.strip("[]\"' ").lower()
+    if s_lower in ("yes", "no"):
+        return (s_lower, None)
+    return (None, None)
+
+
+def task_ta3(case_data: dict, result) -> dict:
+    """
+    Evaluate a single TA3 threshold crossing + date detection task.
+    Returns dict with correct flag, date_correct flag, and metadata.
+    """
+    expected = case_data.get("sol", [])
+    if isinstance(expected, list) and len(expected) >= 1:
+        expected_answer = str(expected[0]).strip().lower()
+    else:
+        expected_answer = str(expected).strip().lower()
+    expected_date = str(expected[1]).strip() if isinstance(expected, list) and len(expected) >= 2 else None
+
+    agent_answer, agent_date = _parse_ta3_answer(result)
+
+    answer_correct = (agent_answer is not None and agent_answer == expected_answer)
+
+    if expected_answer == "yes" and expected_date is not None:
+        date_correct = (agent_date is not None and agent_date == expected_date)
+    else:
+        # Negative task: no date expected
+        date_correct = True if answer_correct else False
+
+    fully_correct = answer_correct and date_correct
+
+    return {
+        "correct": fully_correct,
+        "answer_correct": answer_correct,
+        "date_correct": date_correct,
+        "expected_answer": expected_answer,
+        "expected_date": expected_date,
+        "agent_answer": agent_answer,
+        "agent_date": agent_date,
+        "task_id": case_data.get("id", ""),
+    }
+
+
+def compute_ta3_metrics(eval_results: list, case_data_list: list) -> dict:
+    """
+    Compute aggregate metrics for TA3 threshold crossing + date detection tasks.
+    """
+    if not eval_results:
+        return {}
+
+    n = len(eval_results)
+    correct_count = sum(1 for r in eval_results if r.get("correct", False))
+    answer_correct_count = sum(1 for r in eval_results if r.get("answer_correct", False))
+    date_correct_count = sum(1 for r in eval_results if r.get("date_correct", False))
+
+    metrics = {
+        "metric_accuracy": correct_count / n,
+        "metric_answer_accuracy": answer_correct_count / n,
+        "metric_date_accuracy": date_correct_count / n,
+        "metric_correct": correct_count,
+        "metric_answer_correct": answer_correct_count,
+        "metric_date_correct": date_correct_count,
+        "metric_total": n,
+    }
+
+    # Per-biomarker accuracy
+    biomarker_stats = {}
+    for r, case in zip(eval_results, case_data_list):
+        task_id = case.get("id", "")
+        parts = task_id.replace("task_crossing_", "").split("_")
+        if len(parts) >= 1:
+            biomarker = parts[0]
+            if biomarker not in biomarker_stats:
+                biomarker_stats[biomarker] = {"correct": 0, "total": 0}
+            biomarker_stats[biomarker]["total"] += 1
+            if r.get("correct", False):
+                biomarker_stats[biomarker]["correct"] += 1
+
+    for bio, stats in biomarker_stats.items():
+        metrics[f"metric_accuracy_{bio}"] = stats["correct"] / stats["total"] if stats["total"] > 0 else 0.0
+
+    # Per-patient accuracy
+    patient_stats = {}
+    for r, case in zip(eval_results, case_data_list):
+        mrn = case.get("eval_MRN", "unknown")
+        if mrn not in patient_stats:
+            patient_stats[mrn] = {"correct": 0, "total": 0}
+        patient_stats[mrn]["total"] += 1
+        if r.get("correct", False):
+            patient_stats[mrn]["correct"] += 1
+
+    for mrn, stats in patient_stats.items():
+        metrics[f"metric_accuracy_patient_{mrn}"] = stats["correct"] / stats["total"] if stats["total"] > 0 else 0.0
+
+    # Yes/No answer distribution
+    yes_expected = sum(1 for case in case_data_list if case.get("sol", [""])[0].lower() == "yes")
+    no_expected = n - yes_expected
+    metrics["metric_yes_expected"] = yes_expected
+    metrics["metric_no_expected"] = no_expected
+
+    # Sensitivity & Specificity
+    tp = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "yes" and c.get("sol", [""])[0].lower() == "yes")
+    tn = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "no" and c.get("sol", [""])[0].lower() == "no")
+    fp = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "yes" and c.get("sol", [""])[0].lower() == "no")
+    fn = sum(1 for r, c in zip(eval_results, case_data_list)
+             if r.get("agent_answer") == "no" and c.get("sol", [""])[0].lower() == "yes")
+
+    metrics["metric_sensitivity"] = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+    metrics["metric_specificity"] = tn / (tn + fp) if (tn + fp) > 0 else 0.0
+    metrics["metric_tp"] = tp
+    metrics["metric_tn"] = tn
+    metrics["metric_fp"] = fp
+    metrics["metric_fn"] = fn
+
+    # Date accuracy among positive tasks only
+    pos_results = [(r, c) for r, c in zip(eval_results, case_data_list) if c.get("sol", [""])[0].lower() == "yes"]
+    if pos_results:
+        date_correct_pos = sum(1 for r, _ in pos_results if r.get("date_correct", False))
+        metrics["metric_date_accuracy_positive"] = date_correct_pos / len(pos_results)
+    else:
+        metrics["metric_date_accuracy_positive"] = 0.0
+
+    metrics["metric_num_cases"] = n
+
+    return metrics
+
+
 def _standard_task_not_available(*args, **kwargs):
     raise NotImplementedError(
         "The original MedAgentBench reference solution functions (task1-task10) are not "

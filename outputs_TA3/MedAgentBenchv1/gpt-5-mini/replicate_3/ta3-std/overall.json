@@ -1,0 +1,261 @@
+{
+    "total": 30,
+    "validation": {
+        "running": 0.0,
+        "completed": 0.7,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.3,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 4.0,
+        "max_history_length": 4,
+        "min_history_length": 4
+    },
+    "custom": {
+        "success rate": 0.13333333333333333,
+        "raw_results": [
+            {
+                "index": 0,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[{\"albumin_observations\":[{\"date\":\"2023-02-03\",\"value\":2.8,\"unit\":\"g/dL\"},{\"date\":\"2023-02-24\",\"value\":3.3,\"unit\":\"g/dL\"},{\"date\":\"2023-03-03\",\"value\":3.6,\"unit\":\"g/dL\"},{\"date\":\"2023-03-24\",\"value\":3.0,\"unit\":\"g/dL\"},{\"date\":\"2023-04-15\",\"value\":4.0,\"unit\":\"g/dL\"},{\"date\":\"2023-05-05\",\"value\":3.5,\"unit\":\"g/dL\"},{\"date\":\"2023-07-01\",\"value\":3.1,\"unit\":\"g/dL\"},{\"date\":\"2023-07-06\",\"value\":3.2,\"unit\":\"g/dL\"},{\"date\":\"2023-07-14\",\"value\":3.2,\"unit\":\"g/dL\"},{\"date\":\"2023-09-15\",\"value\":2.6,\"unit\":\"g/dL\"},{\"date\":\"2023-09-17\",\"value\":2.7,\"unit\":\"g/dL\"},{\"date\":\"2023-09-19\",\"value\":2.3,\"unit\":\"g/dL\"},{\"date\":\"2023-09-20\",\"value\":3.0,\"unit\":\"g/dL\"},{\"date\":\"2023-09-21\",\"value\":2.4,\"unit\":\"g/dL\"},{\"date\":\"2023-09-23\",\"value\":2.4,\"unit\":\"g/dL\"},{\"date\":\"2023-09-24\",\"value\":2.5,\"unit\":\"g/dL\"},{\"date\":\"2023-11-06\",\"value\":2.1,\"unit\":\"g/dL\"},{\"date\":\"2023-11-08\",\"value\":2.1,\"unit\":\"g/dL\"},{\"date\":\"2023-11-11\",\"value\":2.2,\"unit\":\"g/dL\"},{\"date\":\"2023-11-12\",\"value\":1.6,\"unit\":\"g/dL\"}]},{\"summary\":{\"initial_value_on_2023-01-14_g/dL\":4.1,\"developed_hypoalbuminemia\":true,\"hypo_definition\":\"albumin < 3.5 g/dL\",\"first_date_below_3_5\":\"2023-02-03\",\"first_value_"
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes\", \"First measurement crossing TBIL > 3.0 mg/dL: 2023-07-04T13:12:00+00:00 (TBIL 4.1 mg/dL)\"]"
+            },
+            {
+                "index": 1,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent ALB measurements for patient S0674240 (date -> value g/dL): 2023-02-03 -> 2.8 g/dL; 2023-02-24 -> 3.3 g/dL; 2023-03-03 -> 3.6 g/dL; 2023-03-24 -> 3.0 g/dL; 2023-04-15 -> 4.0 g/dL; 2023-05-05 -> 3.5 g/dL; 2023-07-01 -> 3.1 g/dL; 2023-07-06 -> 3.2 g/dL; 2023-07-14 -> 3.2 g/dL; 2023-09-15 -> 2.6 g/dL; 2023-09-17 -> 2.7 g/dL; 2023-09-19 -> 2.3 g/dL; 2023-09-20 -> 3.0 g/dL; 2023-09-21 -> 2.4 g/dL; 2023-09-23 -> 2.4 g/dL; 2023-09-24 -> 2.5 g/dL; 2023-11-06 -> 2.1 g/dL; 2023-11-08 -> 2.1 g/dL; 2023-11-11 -> 2.2 g/dL; 2023-11-12 -> 1.6 g/dL\", \"Yes — the patient developed severe hypoalbuminemia (<2.8 g/dL). The first measurement below 2.8 g/dL occurred on 2023-09-15 (ALB 2.6 g/dL).\"]"
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[[\n  {\"effectiveDateTime\":\"2023-02-11T16:04:00+00:00\",\"value\":397,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-02-24T21:10:00+00:00\",\"value\":285,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-05-19T18:47:00+00:00\",\"value\":271,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-06-23T18:58:00+00:00\",\"value\":238,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-07-01T13:05:00+00:00\",\"value\":151,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-07-07T12:31:00+00:00\",\"value\":202,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-09-14T21:20:00+00:00\",\"value\":290,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-09-15T04:30:00+00:00\",\"value\":263,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-09-16T01:23:00+00:00\",\"value\":214,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-09-16T12:45:00+00:00\",\"value\":218,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-09-18T12:33:00+00:00\",\"value\":188,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-09-24T02:18:00+00:00\",\"value\":167,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-10-21T22:44:00+00:00\",\"value\":230,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-11-02T21:10:00+00:00\",\"value\":188,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-11-05T08:01:00+00:00\",\"value\":129,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-11-07T17:34:00+00:00\",\"value\":114,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-11-09T12:13:00+00:00\",\"value\":86,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-11-10T15:27:00+00:00\",\"value\":98,\"unit\":\"K/uL\"},\n  {\"effectiveDateTime\":\"2023-11-11T16:09:00+00:00\",\"value\":112,\"unit\":\"K/uL\"}\n],\n\"no\"]"
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent TBIL observations (effectiveDateTime — value mg/dL): 2023-02-03T18:56:00+00:00 — 0.3; 2023-02-10T20:13:00+00:00 — 0.2; 2023-03-24T19:34:00+00:00 — 0.4; 2023-06-23T18:58:00+00:00 — 1.0; 2023-07-04T13:12:00+00:00 — 4.1; 2023-07-07T12:31:00+00:00 — 3.2; 2023-07-14T22:03:00+00:00 — 3.4; 2023-09-14T21:20:00+00:00 — 18.3; 2023-09-15T02:24:00+00:00 — 19.1 (duplicate entries); 2023-09-20T12:07:00+00:00 — 15.0; 2023-09-21T13:56:00+00:00 — 14.6; 2023-09-22T13:50:00+00:00 — 14.0; 2023-09-23T12:59:00+00:00 — 13.8; 2023-09-24T02:18:00+00:00 — 13.6; 2023-11-03T10:50:00+00:00 — 13.1; 2023-11-04T12:42:00+00:00 — 12.4; 2023-11-06T14:18:00+00:00 — 10.7; 2023-11-07T17:34:00+00:00 — 9.6; 2023-11-09T12:13:00+00:00 — 10.2\",\"Did the patient develop moderate hyperbilirubinemia (>2.0 mg/dL)? Yes. First measurement "
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent ALB results for Patient S2033286 (effectiveDateTime: value g/dL) in chronological order: 2022-02-21: 3.1 g/dL; 2022-05-06: 3.0 g/dL; 2022-05-11: 3.0 g/dL; 2022-05-27: 3.0 g/dL; 2022-07-14: 3.6 g/dL; 2022-08-11: 4.1 g/dL; 2022-09-08: 3.9 g/dL; 2022-10-06: 3.9 g/dL; 2023-03-26: 3.3 g/dL; 2023-04-23: 3.6 g/dL; 2023-05-06: 3.6 g/dL; 2023-05-28: 3.5 g/dL; 2023-07-27: 2.8 g/dL; 2023-09-03: 2.6 g/dL; 2023-09-18: 2.7 g/dL; 2023-10-16: 2.5 g/dL; 2023-10-24: 2.5 g/dL; 2023-10-25: 2.5 g/dL; 2023-11-11: 1.8 g/dL; 2023-11-12: 1.6 g/dL\", \"Yes — the patient developed severe hypoalbuminemia (albumin < 2.8 g/dL). The first measurement after 2019-12-12 that crossed below 2.8 g/dL was 2023-09-03 (ALB = 2.6 g/dL).\"]"
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[{\"observations\":[{\"date\":\"2020-06-12T19:47:00+00:00\",\"value\":0.3},{\"date\":\"2022-03-31T21:40:00+00:00\",\"value\":0.3},{\"date\":\"2022-05-11T17:50:00+00:00\",\"value\":0.4},{\"date\":\"2022-05-27T20:34:00+00:00\",\"value\":0.3},{\"date\":\"2022-06-16T21:47:00+00"
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes — the patient developed thrombocytopenia.\",\"First measurement < 150 K/uL: 2023-06-16 (PLT = 143 K/uL).\"]"
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes — the patient developed severe hypoalbuminemia (albumin < 2.8 g/dL).\",\"First measurement crossing the threshold: 2023-10-31T07:09:00+00:00 (Observation/294384) with ALB = 1.5 g/dL.\"]"
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent ALB results (after 2023-03-06): 2023-03-22T03:43:00+00:00 -> 4.2 g/dL; 2023-04-05T22:46:00+00:00 -> 4.5 g/dL; 2023-05-03T15:17:00+00:00 -> 3.5 g/dL; 2023-06-03T02:57:00+00:00 -> 4.1 g/dL; 2023-06-24T04:20:00+00:00 -> 4.1 g/dL; 2023-07-05T17:33:00+00:00 -> 4.0 g/dL; 2023-07-16T04:55:00+00:00 -> 3.8 g/dL; 2023-08-05T18:45:00+00:00 -> 4.1 g/dL; 2023-08-12T17:35:00+00:00 -> 4.0 g/dL; 2023-08-26T23:46:00+00:00 -> 4.1 g/dL; 2023-09-09T14:43:00+00:00 -> 4.1 g/dL; 2023-09-23T22:45:00+00:00 -> 3.5 g/dL; 2023-10-04T08:17:00+00:00 -> 4.1 g/dL; 2023-10-14T14:35:00+00:00 -> 3.1 g/dL; 2023-10-23T04:41:00+00:00 -> 3.2 g/dL; 2023-10-31T07:09:00+00:00 -> 1.5 g/dL; 2023-11-13T03:43:00+00:00 -> 2.2 g/dL\", \"Did the patient develop hypoalbuminemia (<3.5 g/d"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent INR observations from the FHIR server for patient S6488980 after 2023-03-06: none found (bundle total = 0).\",\"Did the patient develop mildly prolonged INR (>1.5)? No — no subsequent INR results were returned, so there is no evidence in the FHIR data of an INR > 1.5.\",\"First date crossing 1.5: not applicable (no qualifying measurements found).\",\"Reference: index INR = 1.1 on 2023-03-06 (provided).\"]"
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 18,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 19,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[{\"patient\":\"S6539215\",\"query\":\"Observation?code=ALB&patient=S6539215&date=gt2023-09-03\",\"observations\":[{\"id\":\"273165\",\"effectiveDateTime\":\"2023-09-04T12:28:00+00:00\",\"value\":2.1,\"unit\":\"g/dL\"},{\"id\":\"273160\",\"effectiveDateTime\":\"2023-09-18T13:47:00+00:00\",\"value\":2.2,\"unit\":\"g/dL\"},{\"id\":\"273161\",\"effectiveDateTime\":\"2023-09-26T01:01:00+00:00\",\"value\":2.5,\"unit\":\"g/dL\"},{\"id\":\"273167\",\"effectiveDateTime\":\"2023-09-26T14:12:00+00:00\",\"value\":2.0,\"unit\":\"g/dL\"},{\"id\":\"273154\",\"effectiveDateTime\":\"2023-09-29T13:18:00+00:00\",\"value\":2.3,\"unit\":\"g/dL\"},{\"id\":\"273159\",\"effectiveDateTime\":\"2023-10-03T04:39:00+00:00\",\"value\":2.4,\"unit\":\"g/dL\"},{\"id\":\"273163\","
+            },
+            {
+                "index": 20,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 22,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent PLT measurements (effectiveDateTime -> value K/uL): 2023-09-05T13:10:00+00:00 -> 107, 2023-09-09T05:24:00+00:00 -> 102, 2023-09-15T13:38:00+00:00 -> 120, 2023-09-18T13:47:00+00:00 -> 112, 2023-09-25T13:03:00+00:00 -> 104, 2023-10-06T14:46:00+00:00 -> 141, 2023-10-09T12:55:00+00:00 -> 178, 2023-10-11T14:26:00+00:00 -> 199, 2023-10-13T06:28:00+00:00 -> 239, 2023-10-21T14:07:00+00:00 -> 250, 2023-10-25T12:30:00+00:00 -> 269, 2023-10-26T12:50:00+00:00 -> 318, 2023-10-26T19:42:00+00:00 -> 287, 2023-10-27T03:01:00+00:00 -> 219, 2023-10-27T04:38:00+00:00 -> 225, 2023-11-01T12:04:00+00:00 -> 111, 2023-11-01T13:27:00+00:00 -> 139, 2023-11-01T19:50:00+00:00 -> 141, 2023-11-02T23:04:00+00:00 -> 201, 2023-11-06T12:32:00+00:00 -> 158\", \"Conclusion: The patient already met criteria for moderate thrombocytopenia on 2023-09-04 (PLT 94.0 K/uL). No subsequent PLT measurement after 2023-09-04 was <100 K/uL, so there is no new occurrence after that date (no first crossing <100 K/uL found in the queried data).\"]"
+            },
+            {
+                "index": 23,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 21,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 24,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[{\"observations\":[{\"id\":\"312696\",\"effectiveDateTime\":\"2022-08-22T20:10:00+00:00\",\"value\":\"4.5 g/dL\"},{\"id\":\"312694\",\"effectiveDateTime\":\"2022-11-14T15:57:00+00:00\",\"value\":\"4.0 g/dL\"},{\"id\":\"312699\",\"effectiveDateTime\":\"2022-11-28T15:19:00+00:00\",\"value\":\"3.7 g/dL\"},{\"id\":\"312698\",\"effectiveDateTime\":\"2023-02-13T15:45:00+00:00\",\"value\":\"4.1 g/dL\"},{\"id\":\"312703\",\"effectiveDateTime\":\"2023-02-27T18:08:00+00:00\",\"value\":\"4.2 g/dL\"},{\"id\":\"312693\",\"effectiveDateTime\":\"2023-03-27T14:50:00+00:00\",\"value\":\"4.2 g/dL\"},{\"id\":\"312711\",\"effectiveDateTime\":\"2023-05-08T17:38:00+00:00\",\"value\":\"4.1 g/dL\"},{\"id\":\"312701\",\"effectiveDateTime\":\"2023-06-05T16:26:00+00:00\",\"value\":\"3.7 g/dL\"},{\"id\":\"312704\",\"effectiveDateTime\":\"2023-06-27T21:29:00+00:00\",\"value\":\"3.8 g/dL\"},{\"id\":\"312707\",\"effectiveDateTime\":\"2023-07-03T18:01:00+00:00\",\"value\":\"3.9 g/dL\"},{\"id\":\"312695\",\"effectiveDateTime\":\"2023-07-24T22:56:00+00:00\",\"value\":\"3.5 g/dL\"},{\"id\":\"312708\",\"effectiveDateTime\":\"2023-08-07T15:20:00+00:00\",\"value\":\"3.5 g/dL\"},{\"id\":\"312713\",\"effectiveDateTime\":\"2023-08-12T21:25:00+00:00\",\"value\":\"3.7 g/dL\"},{\"id\":\"312702\",\"effectiveDateTime\":\"2023-08-21T20:47:00+00:00\",\"value\":\"3.7 g/dL\"},{\"id\":\"312700\",\"effectiveDateTime\":\"2023-09-11T15:24:00+00:00\",\"value\":\"4.3 g/dL\"},{\"id\":\"312709\",\"effectiveDateTime\":\"2023-10-08T17:16:00+00:00\",\"value\":\"3.5 g/dL\"},{\"id\":\"312705\",\"effectiveDateTime\":\"2023-10-10T18:44:00+00:00\",\"value\":\"3.3 g/dL\"},{\"id\":\"312706\",\"effectiveDateTime\":\"2023-10-16T15:19:00+00:00\",\"value\":\"3.5 g/dL\"},{\"id\":\"312710\",\"effectiveDateTime\":\"2023-10-22T15"
+            },
+            {
+                "index": 25,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent PLT observations (effectiveDateTime -> value K/uL): 2023-01-30T15:22:00+00:00 -> 91; 2023-03-27T14:50:00+00:00 -> 167; 2023-05-14T22:33:00+00:00 -> 83; 2023-07-06T23:2"
+            },
+            {
+                "index": 27,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"No — none of the subsequent ALT measurements (from 2022-08-09 onward) exceeded 120 U/L; the highest observed value was 44 U/L on 2022-12-26.\",\"N/A\"]"
+            },
+            {
+                "index": 29,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 26,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 28,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Subsequent ALKP values (after 2022-08-08): 2022-08-22: 78 U/L; 2022-08-28: 90 U/L; 2022-10-17: 135 U/L; 2022-10-31: 159 U/L; 2022-11-14: 133 U/L; 2022-11-28: 133 U/L; 2023-03-27: 123 U/L; 2023-06-05: 100 U/L; 2023-07-03: 116 U/L; 2023-07-31: 67 U/L; 2023-08-07: 63 U/L; 2023-08-12: 61 U/L; 2023-09-11: 71 U/L; 2023-09-26: 52 U/L; 2023-09-29: 44 U/L; 2023-10-01: 39 U/L; 2023-10-24: 72 U/L; 2023-11-05: 161 U/L; 2023-11-10: 96 U/L\", \"Did the patient develop elevated alkaline phosphatase (>147 U/L)? Yes.\", \"First measurement crossing the 147 U/L threshold: 2022-10-31 (159 U/L).\"]"
+            }
+        ],
+        "metric_accuracy": 0.13333333333333333,
+        "metric_answer_accuracy": 0.16666666666666666,
+        "metric_date_accuracy": 0.13333333333333333,
+        "metric_correct": 4,
+        "metric_answer_correct": 5,
+        "metric_date_correct": 4,
+        "metric_total": 30,
+        "metric_accuracy_alb": 0.18181818181818182,
+        "metric_accuracy_tbil": 0.2222222222222222,
+        "metric_accuracy_plt": 0.0,
+        "metric_accuracy_inr": 0.0,
+        "metric_accuracy_alkp": 0.0,
+        "metric_accuracy_alt": 0.0,
+        "metric_accuracy_patient_S0674240": 0.0,
+        "metric_accuracy_patient_S2033286": 0.0,
+        "metric_accuracy_patient_S6488980": 0.2,
+        "metric_accuracy_patient_S6500497": 1.0,
+        "metric_accuracy_patient_S6539215": 0.16666666666666666,
+        "metric_accuracy_patient_S6545016": 0.16666666666666666,
+        "metric_yes_expected": 24,
+        "metric_no_expected": 6,
+        "metric_sensitivity": 1.0,
+        "metric_specificity": 1.0,
+        "metric_tp": 1,
+        "metric_tn": 4,
+        "metric_fp": 0,
+        "metric_fn": 0,
+        "metric_date_accuracy_positive": 0.0,
+        "metric_num_cases": 30
+    },
+    "replicate": 3
+}

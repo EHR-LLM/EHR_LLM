@@ -1,0 +1,261 @@
+{
+    "total": 30,
+    "validation": {
+        "running": 0.0,
+        "completed": 0.3,
+        "agent context limit": 0.0,
+        "agent validation failed": 0.0,
+        "agent invalid action": 0.7,
+        "task limit reached": 0.0,
+        "unknown": 0.0,
+        "task error": 0.0,
+        "average_history_length": 3.066666666666667,
+        "max_history_length": 4,
+        "min_history_length": 2
+    },
+    "custom": {
+        "success rate": 0.06666666666666667,
+        "raw_results": [
+            {
+                "index": 1,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 0,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed hypoalbuminemia. The first albumin measurement below 3.5 g/dL after 2023‑01‑14 was on 2023‑02‑03.\"]"
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 5,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 7,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 8,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 9,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 11,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 12,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 10,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient’s alkaline phosphatase remained elevated after the 2023‑03‑06 baseline. The first subsequent measurement that exceeded 147 U/L was on 2023‑03‑22.\"]"
+            },
+            {
+                "index": 13,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed severe hypoalbuminemia. The first measurement below 2.8 g/dL was on 2023-10-31.\"]"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 17,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 19,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 20,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed moderate hyperbilirubinemia on 2023-10-08.\"]"
+            },
+            {
+                "index": 18,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient developed hypoalbuminemia. The first measurement after 2023-09-03 that fell below 3.5 g/dL was on 2023-09-04.\"]"
+            },
+            {
+                "index": 22,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 23,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 24,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 21,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"Yes, the patient remained thrombocytopenic. The first subsequent platelet count that fell below the 150 K/uL threshold was on 2023‑09‑05.\"]"
+            },
+            {
+                "index": 26,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 27,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"No, the patient did not develop a moderate ALT elevation (no ALT measurement exceeded 120 U/L).\"]"
+            },
+            {
+                "index": 28,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 29,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            },
+            {
+                "index": 25,
+                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": null
+            }
+        ],
+        "metric_accuracy": 0.06666666666666667,
+        "metric_answer_accuracy": 0.06666666666666667,
+        "metric_date_accuracy": 0.06666666666666667,
+        "metric_correct": 2,
+        "metric_answer_correct": 2,
+        "metric_date_correct": 2,
+        "metric_total": 30,
+        "metric_accuracy_alb": 0.0,
+        "metric_accuracy_tbil": 0.1111111111111111,
+        "metric_accuracy_plt": 0.16666666666666666,
+        "metric_accuracy_alkp": 0.0,
+        "metric_accuracy_inr": 0.0,
+        "metric_accuracy_alt": 0.0,
+        "metric_accuracy_patient_S0674240": 0.16666666666666666,
+        "metric_accuracy_patient_S2033286": 0.16666666666666666,
+        "metric_accuracy_patient_S6488980": 0.0,
+        "metric_accuracy_patient_S6500497": 0.0,
+        "metric_accuracy_patient_S6539215": 0.0,
+        "metric_accuracy_patient_S6545016": 0.0,
+        "metric_yes_expected": 24,
+        "metric_no_expected": 6,
+        "metric_sensitivity": 0.0,
+        "metric_specificity": 1.0,
+        "metric_tp": 0,
+        "metric_tn": 2,
+        "metric_fp": 0,
+        "metric_fn": 0,
+        "metric_date_accuracy_positive": 0.0,
+        "metric_num_cases": 30
+    },
+    "replicate": 1
+}
