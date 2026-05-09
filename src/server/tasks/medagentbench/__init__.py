@@ -40,6 +40,41 @@ Context: {{context}}
 Question: {{question}}"""
 
 # ============================================================================
+# TA3 PROMPT (threshold-crossing tasks — requires date for affirmative answers)
+# ============================================================================
+
+TA3_prompt = """You are an expert in using FHIR functions to assist medical professionals. You are given a question and a set of possible functions. Based on the question, you will need to make one or more function/tool calls to achieve the purpose.
+
+1. If you decide to invoke a GET function, you MUST put it in the format of
+GET url?param_name1=param_value1&param_name2=param_value2...
+
+2. If you decide to invoke a POST function, you MUST put it in the format of
+POST url
+[your payload data in JSON format]
+
+3. If you have got answers for all the questions and finished all the requested tasks, you MUST call to finish the conversation in the format of (make sure the list is JSON loadable.)
+
+- If the patient DID cross the threshold, respond with the exact date (YYYY-MM-DD) of the first measurement that crossed it:
+  FINISH(["yes", "YYYY-MM-DD"])
+  Example: FINISH(["yes", "2023-07-14"])
+
+- If the patient did NOT cross the threshold:
+  FINISH(["no"])
+
+IMPORTANT:
+- The first element MUST be exactly "yes" or "no" (lowercase, no extra words or punctuation).
+- The date MUST be in YYYY-MM-DD format (date only, not a timestamp). It is required when the answer is "yes" and must be omitted when the answer is "no".
+- Do NOT include any other text in the response.
+
+Your response must be in the format of one of the three cases above, and you can call only one function each time.
+
+Here is a list of functions in JSON format that you can invoke. Note that you should use {{api_base}} as the api_base.
+{{functions}}
+
+Context: {{context}}
+Question: {{question}}"""
+
+# ============================================================================
 # PROMPTS FOR NO-CALCULATOR MODE (model computes score itself)
 # ============================================================================
 
@@ -352,7 +387,9 @@ class MedAgentBench(Task):
             prompt_template = FIB4_prompt_calc if self.use_calculator else FIB4_prompt
         elif self._is_child_pugh:
             prompt_template = ChildPugh_prompt_calc if self.use_calculator else ChildPugh_prompt
-        elif self._is_ta1 or self._is_ta3:
+        elif self._is_ta3:
+            prompt_template = TA3_prompt
+        elif self._is_ta1:
             prompt_template = MedAgentBench_prompt
         else:
             raise ValueError(f"Unknown task type: {self.task_name}. Expected meld-*, fib4-*, child-pugh-*, ta1-*, or ta3-*")
