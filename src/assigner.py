@@ -584,6 +584,11 @@ class Assigner:
                         f"Warning: {task} has no available workers, not retrying (would cause infinite loop)."
                     )
                 )
+                # BUG FIX #1: Restore capacity so the iterator is not permanently starved
+                with self.assignment_lock:
+                    self.free_worker.agent[agent] += 1
+                    self.free_worker.task[task] += 1
+                    self.running_count -= 1
             else:
                 print(
                     ColorMessage.yellow(
@@ -652,11 +657,9 @@ class Assigner:
                 print(ColorMessage.green(f"SUCCESS: {agent}/replicate_{replicate}/{task}#{index}"))
             else:
                 # No error but also no output - this is suspicious
-                # Don't count as finished, don't update progress
                 print(ColorMessage.red(
                     f"WARNING: {agent}/replicate_{replicate}/{task}#{index} completed but output is NULL"
                 ))
-                # Still record this as a completion attempt with null output
                 with self.assignment_lock:
                     self.finished_count += 1  # Count as attempted
                     # Still write to runs.jsonl for traceability
@@ -667,6 +670,8 @@ class Assigner:
                         print(ColorMessage.red(
                             f"ERROR writing runs.jsonl (null output): {e}"
                         ))
+                # BUG FIX #2: record null-output samples so replicate count reaches total
+                self.record_completion(agent, task, replicate, index, TaskOutput(index=index))
                 if self.overall_tqdm is not None:
                     self.overall_tqdm.update(1)
                 key = f"{agent}_r{replicate}"
@@ -684,6 +689,10 @@ class Assigner:
                     print(ColorMessage.red(
                         f"ERROR writing error.jsonl: {e}"
                     ))
+            # BUG FIX #2: record error samples so replicate count reaches total
+            # Use result.output if present (partial result), else a placeholder TaskOutput
+            failed_output = result.output if result.output is not None else TaskOutput(index=index)
+            self.record_completion(agent, task, replicate, index, failed_output)
             if self.overall_tqdm is not None:
                 self.overall_tqdm.update(1)
             key = f"{agent}_r{replicate}"

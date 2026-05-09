@@ -189,6 +189,7 @@ class HTTPAgent(AgentClient):
         max_retries = 5
         base_delay = 8
         max_delay = 120
+        last_error = None  # BUG FIX #8: track last error for diagnostic message
         
         for attempt in range(max_retries):
             try:
@@ -213,11 +214,12 @@ class HTTPAgent(AgentClient):
             except AgentClientException as e:
                 raise e
             except Exception as e:
-                print("Warning: ", e)
-                pass
+                # BUG FIX #8: preserve error context instead of swallowing it silently
+                last_error = e
+                print(f"Warning (attempt {attempt + 1}/{max_retries}): {e}")
             else:
                 resp = resp.json()
                 return self.return_format.format(response=resp)
             if attempt < max_retries - 1:
                 time.sleep(attempt + 2)
-        raise Exception("Failed.")
+        raise Exception(f"Failed after {max_retries} attempts. Last error: {last_error}")

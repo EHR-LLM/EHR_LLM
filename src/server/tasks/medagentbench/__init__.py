@@ -381,7 +381,10 @@ class MedAgentBench(Task):
         if replicate:
             entry["replicate"] = replicate
         
-        os.makedirs(os.path.dirname(self._calc_log_path), exist_ok=True)
+        # BUG FIX #6: dirname returns '' for a plain filename; makedirs('') raises FileNotFoundError
+        parent_dir = os.path.dirname(self._calc_log_path)
+        if parent_dir:
+            os.makedirs(parent_dir, exist_ok=True)
         with open(self._calc_log_path, "a", encoding="utf-8") as f:
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
@@ -456,7 +459,10 @@ class MedAgentBench(Task):
                         pass
 
                 if r.startswith('GET'):
-                    url = r[3:].strip().split('\n')[0].strip() + '&_format=json'
+                    # BUG FIX #3: use '?' when there are no existing query params
+                    raw_url = r[3:].strip().split('\n')[0].strip()
+                    sep = '&' if '?' in raw_url else '?'
+                    url = raw_url + sep + '_format=json'
                     get_res = send_get_request(url)
                     if "data" in get_res:
                         session.inject({"role": "user", "content": f"Here is the response from the GET request:\n{get_res['data']}. Please call FINISH if you have got answers for all the questions and finished all the requested tasks"})

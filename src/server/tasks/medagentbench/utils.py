@@ -27,9 +27,11 @@ def send_get_request(url, params=None, headers=None):
     try:
         response = requests.get(url, params=params, headers=headers)
         response.raise_for_status()  # Raises an HTTPError if the response code is 4xx or 5xx
+        # BUG FIX #7: FHIR servers return 'application/fhir+json' or 'application/json; charset=utf-8'
+        # — an exact equality check never matches. Use substring match instead.
         return {
             "status_code": response.status_code,
-            "data": response.json() if response.headers.get('Content-Type') == 'application/json' else response.text
+            "data": response.json() if 'json' in response.headers.get('Content-Type', '') else response.text
         }
     except Exception as e:
         return {"error": str(e)}
