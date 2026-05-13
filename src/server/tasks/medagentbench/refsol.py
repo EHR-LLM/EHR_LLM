@@ -641,9 +641,28 @@ def _parse_ta3_answer(result) -> tuple:
     # Try to parse as JSON list
     try:
         parsed = json.loads(s)
-        if isinstance(parsed, list):
-            answer = str(parsed[0]).strip().lower() if len(parsed) >= 1 else None
-            date = str(parsed[1]).strip() if len(parsed) >= 2 else None
+        if isinstance(parsed, list) and len(parsed) >= 1:
+            p0 = str(parsed[0]).strip()
+            p0_lower = p0.lower()
+            # Strict match: first element is exactly "yes" or "no"
+            if p0_lower == "yes":
+                answer = "yes"
+            elif p0_lower == "no":
+                answer = "no"
+            # Lenient match: first element starts with "yes" or "no" (model added narrative)
+            elif p0_lower.startswith("yes"):
+                answer = "yes"
+            elif p0_lower.startswith("no"):
+                answer = "no"
+            else:
+                # Unrecognisable first element — cannot extract answer
+                return (None, None)
+            # Extract date: try parsed[1] first, extract YYYY-MM-DD pattern
+            date = None
+            if answer == "yes" and len(parsed) >= 2:
+                date_m = re.search(r'(\d{4}-\d{2}-\d{2})', str(parsed[1]))
+                if date_m:
+                    date = date_m.group(1)
             return (answer, date)
         if isinstance(parsed, str):
             return (parsed.strip().lower(), None)

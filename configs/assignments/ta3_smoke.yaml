@@ -1,0 +1,15 @@
+import: definition.yaml
+
+concurrency:
+  task:
+    ta3-smoke: 3
+  agent:
+    gpt-5-mini: 3
+
+assignments:
+  - agent:
+      - gpt-5-mini
+    task:
+      - ta3-smoke
+
+output: "outputs_TA3_smoke/MedAgentBenchv1"

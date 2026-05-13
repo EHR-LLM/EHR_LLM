@@ -3,7 +3,7 @@ parameters:
   url: https://openrouter.ai/api/v1/chat/completions
   headers:
     Content-Type: application/json
-    Authorization: Bearer sk-or-v1-9
+    Authorization: Bearer ${OPENROUTER_API_KEY}
     HTTP-Referer: http://localhost
     X-Title: MedAgentBench
   body:

@@ -28,6 +28,12 @@ ta3-std:
     data_file: "data/medagentbench/test_data_ta3.json"
     func_file: "data/medagentbench/funcs_v1.json"
 
+ta3-smoke:
+  parameters:
+    name: ta3-smoke
+    data_file: "data/medagentbench/test_data_ta3_mini.json"
+    func_file: "data/medagentbench/funcs_v1.json"
+
 # ================================================================================
 # NO-CALCULATOR MODE - model computes score itself
 # Standard naming: {score}-std maps to outputs/{Score}Bench_no_calc/

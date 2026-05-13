@@ -59,7 +59,7 @@ class SessionData:
         self.start = time.time()
         self.last_update = time.time()
         self.worker_id = worker_id
-        self.lock = TimeoutLock(1)
+        self.lock = TimeoutLock(10)
 
     def dump(self):
         return {
@@ -88,7 +88,7 @@ class WorkerData:
         self._current = 0
         self.last_visit = time.time()
         self.status = WorkerStatus.ALIVE
-        self.lock = TimeoutLock(2)
+        self.lock = TimeoutLock(15)
 
     @property
     def current(self):

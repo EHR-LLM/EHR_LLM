@@ -200,7 +200,16 @@ class Assigner:
                 for task in tasks:
                     if task in self.task_indices:
                         replicate_queue[task] = self.task_indices[task].copy()
-                
+
+                # Clear remaining_tasks for this replicate to avoid stale initial data causing duplicates.
+                # remaining_tasks was seeded with all indices in __init__ (for worker_generator),
+                # but model_sequential_iterator uses replicate_queue for fresh samples.
+                # Only NOT_AVAILABLE retries should repopulate remaining_tasks during this replicate.
+                with self.assignment_lock:
+                    for task in tasks:
+                        if agent in self.remaining_tasks and task in self.remaining_tasks[agent]:
+                            self.remaining_tasks[agent][task] = []
+
                 # Process all tasks for this replicate
                 while True:
                     # Check if all tasks are done for this replicate
@@ -503,42 +512,49 @@ class Assigner:
                         ))
                         return
                     
-                    # STRONG SAFEGUARD: Validate consistency BEFORE writing overall.json
-                    # Read indexes from runs.jsonl to ensure consistency
+                    # CONSISTENCY CHECK: All expected indexes must appear in either
+                    # runs.jsonl (success) or error.jsonl (failed) — errors are legitimate
+                    # completed samples and must not block overall.json from being written.
                     output_dir = self.get_output_dir(agent, task, replicate)
-                    runs_jsonl_path = os.path.join(output_dir, "runs.jsonl")
-                    runs_indexes = set()
-                    if os.path.exists(runs_jsonl_path):
-                        with open(runs_jsonl_path, "r", encoding="utf-8", errors="replace") as rf:
-                            for rline in rf:
-                                if rline.strip():
-                                    try:
-                                        rdata = json.loads(rline)
-                                        runs_indexes.add(rdata.get("index"))
-                                    except:
-                                        pass
-                    
+
+                    def _read_indexes_from(filename):
+                        idx = set()
+                        p = os.path.join(output_dir, filename)
+                        if os.path.exists(p):
+                            with open(p, "r", encoding="utf-8", errors="replace") as rf:
+                                for rline in rf:
+                                    if rline.strip():
+                                        try:
+                                            idx.add(json.loads(rline).get("index"))
+                                        except:
+                                            pass
+                        return idx
+
+                    runs_indexes = _read_indexes_from("runs.jsonl")
+                    error_indexes = _read_indexes_from("error.jsonl")
+                    all_seen_indexes = runs_indexes | error_indexes
+
                     expected_indexes = set(self.task_indices.get(task, []))
-                    missing_in_runs = expected_indexes - runs_indexes
-                    extra_in_runs = runs_indexes - expected_indexes
-                    
-                    if missing_in_runs or extra_in_runs:
+                    missing_indexes = expected_indexes - all_seen_indexes
+                    extra_indexes = all_seen_indexes - expected_indexes
+
+                    if missing_indexes or extra_indexes:
                         print(ColorMessage.red(
                             f"[CRITICAL CONSISTENCY ERROR] {agent}/replicate_{replicate}/{task}:\n"
                             f"  Expected indexes: {sorted(expected_indexes)}\n"
                             f"  Found in runs.jsonl: {sorted(runs_indexes)}\n"
-                            f"  MISSING from runs.jsonl: {sorted(missing_in_runs)}\n"
-                            f"  EXTRA in runs.jsonl: {sorted(extra_in_runs)}\n"
-                            f"  ABORTING overall.json write to prevent inconsistency!"
+                            f"  Found in error.jsonl: {sorted(error_indexes)}\n"
+                            f"  MISSING from both: {sorted(missing_indexes)}\n"
+                            f"  EXTRA (unexpected): {sorted(extra_indexes)}\n"
+                            f"  ABORTING overall.json write!"
                         ))
-                        # Don't write overall.json if there's a consistency issue
-                        # Instead, write an error marker file
                         error_marker = {
                             "error": "consistency_check_failed",
                             "expected_indexes": sorted(expected_indexes),
                             "runs_indexes": sorted(runs_indexes),
-                            "missing_in_runs": sorted(missing_in_runs),
-                            "extra_in_runs": sorted(extra_in_runs),
+                            "error_indexes": sorted(error_indexes),
+                            "missing_indexes": sorted(missing_indexes),
+                            "extra_indexes": sorted(extra_indexes),
                             "results_count": actual_count
                         }
                         with open(os.path.join(output_dir, "overall_INCONSISTENT.json"), "w", encoding="utf-8") as ef:
@@ -691,7 +707,11 @@ class Assigner:
                     ))
             # BUG FIX #2: record error samples so replicate count reaches total
             # Use result.output if present (partial result), else a placeholder TaskOutput
+            # CRITICAL: always ensure index is set from callback param — result.output.index
+            # may be None when the session never started (e.g. INTERACT_FAILED on start)
             failed_output = result.output if result.output is not None else TaskOutput(index=index)
+            if failed_output.index is None:
+                failed_output = failed_output.model_copy(update={"index": index})
             self.record_completion(agent, task, replicate, index, failed_output)
             if self.overall_tqdm is not None:
                 self.overall_tqdm.update(1)

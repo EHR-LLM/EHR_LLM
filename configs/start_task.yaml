@@ -1,7 +1,13 @@
+controller: "http://localhost:5100/api"
+
 definition:
   import: tasks/task_assembly.yaml
 
 start:
+  # TA1 / TA3 tasks
+  ta1-std: 2
+  ta3-std: 2
+
   # NO-CALCULATOR MODE (tasks that compute scores manually)
   meld-std: 2
   fib4-std: 2

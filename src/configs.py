@@ -4,6 +4,9 @@ from copy import deepcopy
 from typing import Any, Dict, Set
 
 import yaml
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def deep_merge(base_item, new_item):
@@ -83,6 +86,8 @@ class ConfigLoader:
                 ret.append(self.parse_imports(path, v))
             return ret
         else:
+            if isinstance(raw_config, str):
+                return os.path.expandvars(raw_config)
             return raw_config
 
     def parse_default_and_overwrite(self, config):

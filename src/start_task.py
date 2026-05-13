@@ -1,6 +1,7 @@
 import argparse
 import os
 import subprocess
+import sys
 import time
 from urllib.parse import urlparse
 
@@ -39,7 +40,7 @@ def _start_worker(name, port, controller, definition):
     else:
         subprocess.Popen(
             [
-                "python",
+                sys.executable,
                 "-m",
                 "src.server.task_worker",
                 name,
@@ -83,14 +84,15 @@ if __name__ == "__main__":
 
     if args.controller:
         if "controller" in config:
+            controller_check_url = config["controller"]
             try:
-                requests.get(config["controller"] + "/list_workers")
+                requests.get(controller_check_url + "/list_workers")
             except Exception as e:
                 print("Specified controller not responding, trying to start a new one")
-                o = urlparse(config["controller"])
+                o = urlparse(controller_check_url)
                 subprocess.Popen(
                     [
-                        "python",
+                        sys.executable,
                         "-m",
                         "src.server.task_controller",
                         "--port",
@@ -98,12 +100,13 @@ if __name__ == "__main__":
                     ]
                 )
         else:
+            controller_check_url = "http://localhost:5000/api"
             subprocess.Popen(
-                ["python", "-m", "src.server.task_controller", "--port", "5000"]
+                [sys.executable, "-m", "src.server.task_controller", "--port", "5000"]
             )
         for i in range(10):
             try:
-                requests.get("http://localhost:5000/api/list_workers")
+                requests.get(controller_check_url + "/list_workers")
                 break
             except Exception as e:
                 print("Waiting for controller to start...")
@@ -136,7 +139,15 @@ if __name__ == "__main__":
             _start_worker(args.start[i], base_port, controller_addr, config["definition"])
             base_port += 1
 
-    while True:
-        input()
+    if sys.stdin.isatty():
+        while True:
+            try:
+                input()
+            except EOFError:
+                break
+    else:
+        # Non-interactive mode: keep alive until killed
+        import signal
+        signal.pause()
 
 # try: python start_task.py ../configs/server/test.yaml -a

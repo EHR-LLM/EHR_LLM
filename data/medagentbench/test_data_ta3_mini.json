@@ -1,0 +1,31 @@
+[
+  {
+    "id": "task_crossing_alb_3p5_S0674240",
+    "instruction": "Patient S0674240's albumin was 4.1 g/dL on 2023-01-14. hypoalbuminemia is defined as albumin < 3.5 g/dL. Query all subsequent albumin (ALB) values from the FHIR server. Did the patient develop hypoalbuminemia? If yes, provide the date of the first measurement that crosses the 3.5 g/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for albumin is 'ALB'.",
+    "sol": [
+      "yes",
+      "2023-01-20"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_plt_50_S0674240_neg",
+    "instruction": "Patient S0674240's platelet count was 382.0 K/uL on 2023-01-14. severe thrombocytopenia is defined as platelet count < 50 K/uL. Query all subsequent platelet count (PLT) values from the FHIR server. Did the patient develop severe thrombocytopenia? If yes, provide the date of the first measurement that crosses the threshold. If no, answer 'no'.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for platelet count is 'PLT'.",
+    "sol": [
+      "no"
+    ],
+    "eval_MRN": "S0674240"
+  },
+  {
+    "id": "task_crossing_tbil_3p0_S0674240",
+    "instruction": "Patient S0674240's total bilirubin was 0.5 mg/dL on 2023-01-14. clinical jaundice is defined as total bilirubin > 3.0 mg/dL. Query all subsequent total bilirubin (TBIL) values from the FHIR server. Did the patient develop clinical jaundice? If yes, provide the date of the first measurement that crosses the 3.0 mg/dL threshold.",
+    "context": "It's 2023-11-14T08:00:00+00:00 now. The FHIR server base URL is http://localhost:8080/fhir. The lab code for total bilirubin is 'TBIL'.",
+    "sol": [
+      "yes",
+      "2023-07-01"
+    ],
+    "eval_MRN": "S0674240"
+  }
+]

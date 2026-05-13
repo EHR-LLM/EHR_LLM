@@ -130,15 +130,10 @@ class TaskClient:
             statistics[SampleStatus(result.status)] += 1
         for s in SampleStatus:
             statistics[s] /= len(results)
-        statistics["average_history_length"] = sum(
-            [len(result.history) for result in results]
-        ) / len(results)
-        statistics["max_history_length"] = max(
-            [len(result.history) for result in results]
-        )
-        statistics["min_history_length"] = min(
-            [len(result.history) for result in results]
-        )
+        history_lengths = [len(result.history) for result in results if result.history is not None]
+        statistics["average_history_length"] = sum(history_lengths) / len(history_lengths) if history_lengths else 0
+        statistics["max_history_length"] = max(history_lengths) if history_lengths else 0
+        statistics["min_history_length"] = min(history_lengths) if history_lengths else 0
         ret = {
             "total": len(results),
             "validation": statistics,

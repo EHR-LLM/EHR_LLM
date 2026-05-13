@@ -33,11 +33,11 @@ FINISH([answer1, answer2, ...])
 
 Your response must be in the format of one of the three cases, and you can call only one function each time. You SHOULD NOT include any other text in the response.
 
-Here is a list of functions in JSON format that you can invoke. Note that you should use {{api_base}} as the api_base.
-{{functions}}
+Here is a list of functions in JSON format that you can invoke. Note that you should use {api_base} as the api_base.
+{functions}
 
-Context: {{context}}
-Question: {{question}}"""
+Context: {context}
+Question: {question}"""
 
 # ============================================================================
 # TA3 PROMPT (threshold-crossing tasks — requires date for affirmative answers)
@@ -68,11 +68,11 @@ IMPORTANT:
 
 Your response must be in the format of one of the three cases above, and you can call only one function each time.
 
-Here is a list of functions in JSON format that you can invoke. Note that you should use {{api_base}} as the api_base.
-{{functions}}
+Here is a list of functions in JSON format that you can invoke. Note that you should use {api_base} as the api_base.
+{functions}
 
-Context: {{context}}
-Question: {{question}}"""
+Context: {context}
+Question: {question}"""
 
 # ============================================================================
 # PROMPTS FOR NO-CALCULATOR MODE (model computes score itself)
@@ -475,6 +475,17 @@ class MedAgentBench(Task):
                 if think_match:
                     r = think_match.group(1).strip()
                 r = r.strip()
+
+                # Handle <function_calls><invoke name="GET url"> XML format (used by Claude)
+                fc_match = re.search(r'<function_calls>.*?<invoke\s+name=["\']?(GET\s+\S[^"\'>\n]*)["\']?', r, re.DOTALL)
+                if fc_match:
+                    r = fc_match.group(1).strip()
+
+                # If model prefixed the command with explanatory text, extract the command
+                if not (r.startswith('GET') or r.startswith('POST') or r.startswith('FINISH(')):
+                    cmd_match = re.search(r'(?m)^(GET\s|POST\s|FINISH\()', r)
+                    if cmd_match:
+                        r = r[cmd_match.start():].strip()
 
                 tool_match = re.search(r'\[TOOL_CALL\]\s*(.*?)\s*\[\/TOOL_CALL\]', r, re.DOTALL)
                 if tool_match:

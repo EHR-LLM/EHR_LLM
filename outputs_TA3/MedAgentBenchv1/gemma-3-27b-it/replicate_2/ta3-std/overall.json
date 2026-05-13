@@ -14,42 +14,35 @@
         "min_history_length": 4
     },
     "custom": {
-        "success rate": 0.2,
+        "success rate": 0.3,
         "raw_results": [
             {
                 "index": 0,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No hypoalbuminemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 1,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No severe hypoalbuminemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 2,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No data found for total bilirubin after 2023-01-14 for patient S0674240.\", \"The patient did not develop clinical jaundice based on the available data.\"]"
-            },
-            {
-                "index": 3,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"No moderate hyperbilirubinemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 4,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No severe hyperbilirubinemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 5,
@@ -63,35 +56,42 @@
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No hypoalbuminemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 7,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No severe hypoalbuminemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 8,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No data found for total bilirubin after 2019-12-12 for patient S2033286.\", \"The patient did not develop clinical jaundice based on the available data.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 9,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No moderate hyperbilirubinemia was detected.\"]"
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 3,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"no\"]"
             },
             {
                 "index": 10,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No data found for platelet count after 2018-11-23 for patient S2033286.\", \"Unable to determine if the patient developed thrombocytopenia.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 11,
@@ -101,32 +101,32 @@
                 "result": "[\"no\"]"
             },
             {
-                "index": 12,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"No hypoalbuminemia was detected after 2023-03-06.\"]"
-            },
-            {
                 "index": 13,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No albumin values were found after 2023-03-06 for patient S6488980.\", \"Therefore, it is not possible to determine if the patient developed severe hypoalbuminemia.\"]"
+                "result": "[\"no\"]"
             },
             {
-                "index": 15,
+                "index": 12,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 14,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No alkaline phosphatase values were found after 2023-03-06 for patient S6488980.\", \"The patient did not develop elevated alkaline phosphatase based on the available data.\"]"
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"no\"]"
             },
             {
                 "index": 16,
@@ -145,30 +145,37 @@
             {
                 "index": 18,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"No hypoalbuminemia was detected.\"]"
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\", \"2023-09-03\"]"
             },
             {
                 "index": 19,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"No severe hypoalbuminemia was detected after 2023-09-03.\"]"
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\", \"2023-09-03\"]"
             },
             {
                 "index": 20,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No moderate hyperbilirubinemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 21,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No data found for platelet count after 2023-09-04 for patient S6539215.\", \"Unable to determine if the patient developed thrombocytopenia.\"]"
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 22,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\", \"2023-09-04\"]"
             },
             {
                 "index": 23,
@@ -178,46 +185,39 @@
                 "result": "[\"no\"]"
             },
             {
-                "index": 22,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"No moderate thrombocytopenia was detected after 2023-09-04.\"]"
-            },
-            {
                 "index": 24,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No hypoalbuminemia was detected.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 25,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No data found for platelet count after 2022-08-08 for patient S6545016.\", \"Unable to determine if the patient developed thrombocytopenia.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 26,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No\", \"\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 27,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 28,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 29,
@@ -227,34 +227,34 @@
                 "result": "[\"no\"]"
             }
         ],
-        "metric_accuracy": 0.2,
-        "metric_answer_accuracy": 0.2,
-        "metric_date_accuracy": 0.2,
-        "metric_correct": 6,
-        "metric_answer_correct": 6,
-        "metric_date_correct": 6,
+        "metric_accuracy": 0.3,
+        "metric_answer_accuracy": 0.3,
+        "metric_date_accuracy": 0.3,
+        "metric_correct": 9,
+        "metric_answer_correct": 9,
+        "metric_date_correct": 9,
         "metric_total": 30,
-        "metric_accuracy_alb": 0.18181818181818182,
+        "metric_accuracy_alb": 0.36363636363636365,
         "metric_accuracy_tbil": 0.3333333333333333,
-        "metric_accuracy_plt": 0.16666666666666666,
-        "metric_accuracy_inr": 0.0,
+        "metric_accuracy_plt": 0.3333333333333333,
         "metric_accuracy_alkp": 0.0,
+        "metric_accuracy_inr": 0.0,
         "metric_accuracy_alt": 0.0,
         "metric_accuracy_patient_S0674240": 0.16666666666666666,
         "metric_accuracy_patient_S2033286": 0.16666666666666666,
         "metric_accuracy_patient_S6488980": 0.2,
         "metric_accuracy_patient_S6500497": 1.0,
-        "metric_accuracy_patient_S6539215": 0.16666666666666666,
+        "metric_accuracy_patient_S6539215": 0.6666666666666666,
         "metric_accuracy_patient_S6545016": 0.16666666666666666,
         "metric_yes_expected": 24,
         "metric_no_expected": 6,
-        "metric_sensitivity": 0.0,
+        "metric_sensitivity": 0.125,
         "metric_specificity": 1.0,
-        "metric_tp": 0,
+        "metric_tp": 3,
         "metric_tn": 6,
         "metric_fp": 0,
-        "metric_fn": 4,
-        "metric_date_accuracy_positive": 0.0,
+        "metric_fn": 21,
+        "metric_date_accuracy_positive": 0.125,
         "metric_num_cases": 30
     },
     "replicate": 2

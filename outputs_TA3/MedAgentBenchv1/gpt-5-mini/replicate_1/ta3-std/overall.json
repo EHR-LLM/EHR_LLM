@@ -2,26 +2,47 @@
     "total": 30,
     "validation": {
         "running": 0.0,
-        "completed": 0.8,
+        "completed": 1.0,
         "agent context limit": 0.0,
         "agent validation failed": 0.0,
-        "agent invalid action": 0.2,
+        "agent invalid action": 0.0,
         "task limit reached": 0.0,
         "unknown": 0.0,
         "task error": 0.0,
-        "average_history_length": 4.0,
-        "max_history_length": 4,
+        "average_history_length": 4.066666666666666,
+        "max_history_length": 6,
         "min_history_length": 4
     },
     "custom": {
-        "success rate": 0.06666666666666667,
+        "success rate": 0.43333333333333335,
         "raw_results": [
             {
-                "index": 1,
+                "index": 3,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"Subsequent ALB values (effectiveDateTime UTC -> value g/dL): 2023-02-03T18:56:00+00:00 -> 2.8 g/dL; 2023-02-24T21:10:00+00:00 -> 3.3 g/dL; 2023-03-03T20:18:00+00:00 -> 3.6 g/dL; 2023-03-24T19:34:00+00:00 -> 3.0 g/dL; 2023-04-15T14:38:00+00:00 -> 4.0 g/dL; 2023-05-05T18:38:00+00:00 -> 3.5 g/dL; 2023-07-01T13:05:00+00:00 -> 3.1 g/dL; 2023-07-06T13:24:00+00:00 -> 3.2 g/dL; 2023-07-14T22:03:00+00:00 -> 3.2 g/dL; 2023-09-15T02:24:00+00:00 -> 2.6 g/dL; 2023-09-17T15:43:00+00:00 -> 2.7 g/dL; 2023-09-19T12:09:00+00:00 -> 2.3 g/dL; 2023-09-20T12:07:00+00:00 -> 3.0 g/dL; 2023-09-21T13:56:00+00:00 -> 2.4 g/dL; 2023-09-23T12:59:00+00:00 -> 2.4 g/dL; 2023-09-24T02:18:00+00:00 -> 2.5 g/dL; 2023"
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 2,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"yes\",\"2023-07-04\"]"
+            },
+            {
+                "index": 4,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"yes\",\"2023-09-14\"]"
+            },
+            {
+                "index": 0,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"yes\",\"2023-02-03\"]"
             },
             {
                 "index": 5,
@@ -31,81 +52,88 @@
                 "result": "[\"no\"]"
             },
             {
-                "index": 0,
+                "index": 1,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[{\"observations\":[{\"effectiveDateTime\":\"2023-02-03T18:56:00+00:00\",\"value\":2.8,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-02-24T21:10:00+00:00\",\"value\":3.3,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-03-03T20:18:00+00:00\",\"value\":3.6,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-03-24T19:34:00+00:00\",\"value\":3.0,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-04-15T14:38:00+00:00\",\"value\":4.0,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-05-05T18:38:00+00:00\",\"value\":3.5,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-07-01T13:05:00+00:00\",\"value\":3.1,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-07-06T13:24:00+00:00\",\"value\":3.2,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-07-14T22:03:00+00:00\",\"value\":3.2,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-09-15T02:24:00+00:00\",\"value\":2.6,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-09-17T15:43:00+00:00\",\"value\":2.7,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-09-19T12:09:00+00:00\",\"value\":2.3,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-09-20T12:07:00+00:00\",\"value\":3.0,\"unit\":\"g/dL\"},{\"effectiveDateTime\":\"2023-09-21"
+                "result": "[\"yes\",\"2023-09-15\"]"
             },
             {
-                "index": 2,
-                "status": "SampleStatus.AGENT_INVALID_ACTION",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": null
+                "index": 8,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\",\"2023-11-10\"]"
             },
             {
-                "index": 6,
+                "index": 7,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[{\"observations\":[{\"id\":\"270309\",\"date\":\"2022-02-21\",\"value\":3.1,\"unit\":\"g/dL\"},{\"id\":\"270305\",\"date\":\"2022-05-06\",\"value\":3.0,\"unit\":\"g/dL\"},{\"id\":\"270301\",\"date\":\"2022-05-11\",\"value\":3.0,\"unit\":\"g/dL\"},{\"id\":\"270296\",\"date\":\"2022-05-27\",\"value\":3.0,\"unit\":\"g/dL\"},{\"id\":\"270314\",\"date\":\"2022-07-14\",\"value\":3.6,\"unit\":\"g/dL\"},{\"id\":\"270308\",\"date\":\"2022-08-11\",\"value\":4.1,\"unit\":\"g/dL\"},{\"id\":\"270307\",\"date\":\"2022-09-08\",\"value\":3.9,\"unit\":\"g/dL\"},{\"id\":\"270304\",\"date\":\"2022-10-06\",\"value\":3.9,\"unit\":\"g/dL\"},{\"id\":\"270295\",\"date\":\"2023-03-26\",\"value\":3.3,\"unit\":\"g/dL\"},{\"id\":\"270297\",\"date\":\"2023-04-23\",\"value\""
+                "result": "[\"yes\",\"2023-09-03\"]"
             },
             {
                 "index": 9,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"Yes — patient developed moderate hyperbilirubinemia (TBIL > 2.0 mg/dL).\",\"First measurement exceeding 2.0 mg/dL: 2023-07-14T20:48:00+00:00 — TBIL 2.1 mg/dL (Observation/271672).\",\"Other subsequent TBIL results >2.0 mg/dL: 2023-07-21T23:00:00+00:00 TBIL 2.4 (Observation/271667); 2023-10-25T11:58:00+00:00 TBIL 2.4 (Observation/271655); 2023-10-29T21:50:00+00:00 TBIL 2.3 (Observation/271664); 2023-11-10T12:49:00+00:00 TBIL 3.2 (Observation/271648); 2023-11-12T13:37:00+00:00 TBIL 5.0 (Observation/271653).\"]"
-            },
-            {
-                "index": 8,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Subsequent TBIL observations (effectiveDateTime -> value mg/dL) after 2019-12-12T23:25:00+00:00: 2020-06-12T19:47:00+00:00 -> 0.3 mg/dL; 2022-03-31T21:40:00+00:00 -> 0.3 mg/dL; 2022-05-11T17"
-            },
-            {
-                "index": 7,
-                "status": "SampleStatus.AGENT_INVALID_ACTION",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": null
+                "result": "[\"no\"]"
             },
             {
                 "index": 10,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"Subsequent PLT observations (after 2018-11-23): 2019-12-12: 280 K/uL; 2022-02-21: 190 K/uL; 2022-03-31: 259 K/uL; 2022-05-06: 371 K/uL; 2022-05-11: 288 K/uL; 2022-08-11: 294 K/uL; 2022-10-06: 274 K/uL; 2023-01-24: 274 K/uL; 2023-03-03: 194 K/uL; 2023-04-23: 152 K/uL; 2023-05-28: 196 K/uL; 2023-06-16: 143 K/uL; 2023-07-23: 63 K/uL; 2023-07-27: 150 K/uL; 2023-08-03: 71 K/uL; 2023-08-06: 91 K/uL; 2023-09-03: 182 K/uL; 2023-09-16: 154 K/uL; 2023-10-24: 28 K/uL; 2023-11-12: 72 K/uL\", \"Yes — the patient developed thrombocytopenia. The first measurement below 150 K/uL was 2023-06-16 (PLT 143 K/uL).\"]"
+                "result": "[\"yes\",\"2023-06-16\"]"
             },
             {
                 "index": 11,
                 "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 6,
+                "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"TBIL observations after 2019-12-12: 2020-06-12: 0.3 mg/dL; 2022-03-31: 0.3 mg/dL; 2022-05-11: 0.4 mg/dL; 2022-05-27: 0.3 mg/dL; 2022-06-16: 0.2 mg/dL; 2022-08-11: 0.2 mg/dL; 2022-10-06: 0.3 mg/dL; 2023-03-03: 0.4 mg/dL; 2023-06-03: 0.5 mg/dL; 2023-06-16: 0.5 mg/dL; 2023-07-14: 2.1 mg/dL; 2023-07-21: 2.4 mg/dL; 2023-08-03: 1.5 mg/dL; 2023-09-03: 0"
+                "result": "[\"yes\",\"2022-02-21\"]"
             },
             {
                 "index": 12,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"Developed hypoalbuminemia: Yes\",\"First ALB < 3.5: 2023-10-14T14:35:00+00:00 — 3.1 g/dL\",\"Subsequent ALB measurements after 2023-03-06: 2023-03-22: 4.2 g/dL; 2023-04-05: 4.5 g/dL; 2023-05-03: 3.5 g/dL; 2023-06-03: 4.1 "
-            },
-            {
-                "index": 15,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Yes — the patient developed mildly prolonged INR (>1.5).\",\"First measurement exceeding 1.5: 2023-10-31T07:09:00+00:00 (INR = 1.7).\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 13,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"Subsequent ALB values (effectiveDateTime, value g/dL): 2023-03-22T03:43:00+00:00: 4.2; 2023-04-05T22:46:00+00:00: 4.5; 2023-05-03T15:17:00+00:00: 3.5; 2023-06-03T02:57:00+00:00: 4.1; 2023-06-24T04:20:00+00:00: 4.1; 2023-07-05T17:33:00+00:00: 4.0; 2023-07-16T04:55:00+00:00: 3.8; 2023-08-05T18:45:00+00:00: 4.1; 2023-08-12T17:35:00+00:00: 4.0; 2023-08-26T23:46:00+00:00: 4.1; 2023-09-09T14:43:00+00:00: 4.1; 2023-09-23T22:45:00+00:00: 3.5; 2023-10-04T08:17:00+00:00: 4.1; 2023-10-14T14:35:00+00:00: 3.1; 2023-10-23T04:41:00+00:00: 3.2; 2023-10-31T07:0"
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 14,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"yes\",\"2023-03-22\"]"
+            },
+            {
+                "index": 16,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 15,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\",\"2023-10-31\"]"
             },
             {
                 "index": 17,
@@ -115,146 +143,118 @@
                 "result": "[\"no\"]"
             },
             {
-                "index": 16,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[{\"observations\":[{\"effectiveDateTime\":\"2023-08-05T18:45:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-10-30T11:42:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-07-16T04:55:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-10-23T04:41:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-09-23T22:45:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-11-07T13:37:00+00:00\",\"value\":0.5,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-10-04T08:17:00+00:00\",\"value\":0.4,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-04-05T22:46:00+00:00\",\"value\":0.8,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-10-31T07:09:00+00:00\",\"value\":0.4,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-06-03T02:57:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-08-12T17:35:00+00:00\",\"value\":0.3,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-08-26T23:46:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-11-13T03:43:00+00:00\",\"value\":0.8,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-09-09T14:43:00+00:00\",\"value\":0.2,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-03-22T03:43:00+00:00\",\"value\":0.4,\"unit\":\"mg/dL\"},{\"effectiveDateTime\":\"2023-10-31T07:09:00+00:00\",\"value\":0.4,\"uni"
-            },
-            {
-                "index": 14,
-                "status": "SampleStatus.AGENT_INVALID_ACTION",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": null
-            },
-            {
                 "index": 20,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Yes — the patient developed moderate hyperbilirubinemia (>2.0 mg/dL).\", \"First TBIL >2.0 mg/dL: 2023-10-08T14:34:00+00:00 (value 2.2 mg/dL).\"]"
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\",\"2023-10-08\"]"
             },
             {
                 "index": 19,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Subsequent ALB observations for Patient S6539215 (effectiveDateTime -> value g/dL): 2023-09-04T12:28:00+00:00 -> 2.1; 2023-09-18T13:47:00+00:00 -> 2.2; 2023-09-26T01:01:00+00:00 -> 2.5; 2023-09-26T14:12:00+00:00 -> 2.0; 2023-09-29T13:18:00+00:00 -> 2.3; 2023-10-03T04:39:00+00:00 -> 2.4; 2023-10-07T06:41:00+00:00 -> 3.7; 2023-10-08T14:34:00+00:00 -> 3.6; 2023-10-10T14:25:00+00:00 -> 3.0; 2023-10-13T12:28:00+00:00 -> 2.6; 2023-10-20T15:24:00+00:00 -> 2.7; 2023-10-22T12:07:00+00:0"
-            },
-            {
-                "index": 18,
-                "status": "SampleStatus.AGENT_INVALID_ACTION",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": null
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\",\"2023-09-03\"]"
             },
             {
                 "index": 21,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Subsequent PLT values (effectiveDateTime -> value K/uL): 2023-09-05T13:10:00+00:00 -> 107.0 K/uL; 2023-09-09T05:24:00+00:00 -> 102.0 K/uL; 2023-09-15T13:38:00+00:00 -> 120.0 K/uL; 2023-09-18T13:47:00+00:00 -> 112.0 K/uL; 2023-09-25T13:03:00+00:00 -> 104.0 K/uL; 2023-10-06T14:46:00+00:00 -> 141.0 K/uL; 2023-10-09T12:55:00+00:00 -> 178.0 K/uL; 2023-10-11T14:26:00+00:00 -> 199.0 K/uL; 2023-10-13T06:28:00+00:00 -> 239.0 K/uL; 2023-10-21T14:07:00+00:00 -> 250.0 K/uL; 2023-10-25T12:30:00+00:00 -> 269.0 K/uL; 2023-10-26T12:50:00+00:00 -> 318.0 K/uL; 2023-10-26T19:42:00+00:00 -> 28"
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\",\"2023-09-04\"]"
             },
             {
                 "index": 22,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Subsequent PLT values (effectiveDateTime -> value K/uL): 2023-09-05T13:10:00+00:00 -> 107; 2023-09-09T05:24:00+00:00 -> 102; 2023-09-15T13:38:00+00:00 -> 120; 2023-09-18T13:47:00+00:00 -> 112; 2023-09-25T13:03:00+00:00 -> 104; 2023-10-06T14:46:00+00:00 -> 141; 2023-10-09T12:55:00+00:00 -> 178; 2023-10-11T14:26:00+00:00 -> 199; 2023-10-13T06:28:00+00:00 -> 239; 2023-10-21T14:07:00+00:00 -> 250; 2023-10-25T12:30:00+00:00 -> 269; 2023-10-26T12:50:00+00:00 -> 318; 2023-10-26T19:42:00+00:00 -> 287; 202"
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\",\"2023-09-04\"]"
             },
             {
-                "index": 24,
+                "index": 18,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Subsequent ALB observations (effectiveDateTime -> value g/dL): 2022-08-22T20:10:00+00:00 -> 4.5; 2022-11-14T15:57:00+00:00 -> 4.0; 2022-11-28T15:19:00+00:00 -> 3.7; 2023-02-13T15:45:00+00:00 -> 4.1; 2023-02-27T18:08:00+00:00 -> 4.2; 2023-03-27T14:50:00+00:00 -> 4.2; 2023-05-08T17:38:00+00:00 -> 4.1; 2023-06-05T16:26:00+00:00 -> 3.7; 2023-06-27T21:29:00+00:00 -> 3.8; 2023-07-03T18:01:00+00:00 -> 3.9; 2023-07-24T22:56:00+00:00 -> 3.5; 2023-08-07T15:20:00+00:00 -> 3.5; 2023-08-12T21:25:00+00:00 -> 3.7; 2023-08-21T20:47:00+00:00 -> 3.7; 2023-09-11T15:24:00+00:00 -> 4.3; 2023-10-08T17:16:00+00:00 -> 3.5; 2023-10-10T18:44:00+00:00 -> 3.3; 2023-10-16T15:19:00+00:00 -> 3.5; 2023-10-22T15:54:00+00:00 -> 3.3; 2023-10-29T14:30:00+00:00 -> 3.2\", \"Yes — patient developed hypoalbuminemia (albumin < 3.5 g/dL). First measurement below 3.5: 2023-10-10T18:44:00+00:00 (3.3 g/dL).\"]"
-            },
-            {
-                "index": 25,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Subsequent PLT observations after 2022-08-08 (effectiveDateTime -> value K/uL): 2023-01-30T15:22:00+00:00 -> 91; 2023-03-27T14:50:00+00:00 -> 167; 2023-05-14T22:33:00+00:00 -> 83; 2023-07-06T23:23:00+00:00 -> 135; 2023-07-07T00:21:00+00:00 -> 136; 2023-07-07T21:05:00+00:00 -> 143; 2023-07-08T11:52:00+00:00 -> 131; 2023-07-10T05:21:00+00:00 -> 119; 2023-07-12T16:16:00+00:00 -> 100; 2023-07-24T22:56:00+00:00 -> 239; 2023-08-21T20:47:00+00:00 -> 246; 2023-09-08T21:30:00+00:00 -> 237; 2023-09-11T15:24:00+00:00 -> 211; 2023-09-26T06:37:00+00:00 -> 150; 2023-10-03T01:26:00+00:00 -> 157; 2023-10-16T15:19:00+00:00 -> 108; 2023-10-22T15:54:00+00:00 -> 62; 2023-10-24T15:39:00+00:00 -> 62; 2023-11-06T17:24:00+00:00 -> 190\", \"Did the patient develop thrombocytopenia (<150 K/uL) after 2022-08-08? Yes. First measurement below 150 K/uL after 2022-08-08: 2023-01-30T15:22:00+00:00 (91 K/uL).\"]"
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"yes\",\"2023-09-03\"]"
             },
             {
                 "index": 23,
-                "status": "SampleStatus.AGENT_INVALID_ACTION",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": null
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
             },
             {
                 "index": 27,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[\"No — the patient did not develop moderate (CTCAE Grade 2) ALT elevation; no ALT values > 120 U/L were found in observations on or after 2022-08-09.\",\"Highest subsequent ALT was 44.0 U/L on 2022-12-26T15:53:00+00:00 (Observation/312760); therefore there is no date of first measurement crossing the 120 U/L threshold.\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 26,
-                "status": "SampleStatus.AGENT_INVALID_ACTION",
+                "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": null
+                "result": "[\"no\"]"
+            },
+            {
+                "index": 24,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"yes\",\"2023-10-10\"]"
+            },
+            {
+                "index": 25,
+                "status": "SampleStatus.COMPLETED",
+                "evaluation": "Incorrect",
+                "correct": false,
+                "result": "[\"yes\",\"2023-01-30\"]"
             },
             {
                 "index": 28,
                 "status": "SampleStatus.COMPLETED",
                 "evaluation": "Incorrect",
                 "correct": false,
-                "result": "[{\"subsequent_values\":[{\"effectiveDateTime\":\"2022-08-22T20:10:00+00:00\",\"value\":78.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2022-08-28T19:48:00+00:00\",\"value\":90.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2022-10-17T17:03:00+00:00\",\"value\":135.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2022-10-31T18:01:00+00:00\",\"value\":159.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2022-11-14T15:57:00+00:00\",\"value\":133.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2022-11-28T15:19:00+00:00\",\"value\":133.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-03-27T14:50:00+00:00\",\"value\":123.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-06-05T16:26:00+00:00\",\"value\":100.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-07-03T18:01:00+00:00\",\"value\":116.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-07-31T17:46:00+00:00\",\"value\":67.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-08-07T15:20:00+00:00\",\"value\":63.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-08-12T21:25:00+00:00\",\"value\":61.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-09-11T15:24:00+00:00\",\"value\":71.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-09-26T12:32:00+00:00\",\"value\":52.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-09-29T12:46:00+00:00\",\"value\":44.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-10-01T11:59:00+00:00\",\"value\":39.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-10-24T15:39:00+00:00\",\"value\":72.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-11-05T22:02:00+00:00\",\"value\":161.0,\"unit\":\"U/L\"},{\"effectiveDateTime\":\"2023-11-10T22:19:00+00:00\","
-            },
-            {
-                "index": 3,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[{\"observations\":[{\"effectiveDateTime\":\"2023-02-03T18:56:00+00:00\",\"value_mg/dL\":0.3},{\"effectiveDateTime\":\"2023-02-10T20:13:00+00:00\",\"value_mg/dL\":0.2},{\"effectiveDateTime\":\"2023-03-24T19:34:00+00:00\",\"value_mg/dL\":0.4},{\"effectiveDateTime\":\"2023-06-23T18:58:00+00:00\",\"value_mg/dL\":1.0},{\"effectiveDateTime\":\"2023-07-04T13:12:00+00:00\",\"value_mg/dL\":4.1},{\"effectiveDateTime\":\"2023-07-07T12:31:00+00:00\",\"value_mg/dL\":3.2},{\"effectiveDateTime\":\"2023-07-14T22:03:00+00:00\",\"value_mg/dL\":3.4},{\"effectiveDateTime\":\"2023-09-14T21:20:00+00:00\",\"value_mg/dL\":18.3},{\"effectiveDateTime\":\"2023-09-15T02:24:00+00:00\",\"value_mg/dL\":19.1},{\"effectiveDateTime\":\"2023-09-15T02:24:00+00:00\",\"value_mg/dL\":19.1},{\"effectiveDateTime\":\"2023-09-20T12:07:00+00:00\",\"value_mg/dL\":15.0},{\"effectiveDateTime\":\"2023-09-21T13:56:00+00:00\",\"value_mg/dL\":14.6},{\"effectiveDateTime\":\"2023-09-22T13:50:00+00:00\",\"value_mg/dL\":14.0},{\"effectiveDateTime\":\"2023-09-23T12:59:00+00:00\",\"value_mg/dL\":13.8},{\"effectiveDateTime\":\"2023-09-24T02:18:00+00:00\",\"value_mg/dL\":13.6},{\"effectiveDateTime\":\"2023-11-03T10:50:00+00:00\",\"value_mg/dL\":13.1},{\"effectiveDateTime\":\"2023-11-04T12:42:00+00:00\",\"value_mg/d"
-            },
-            {
-                "index": 4,
-                "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[\"Yes — the patient developed severe hyperbilirubinemia.\",\"First TBIL > 5.0 mg/dL: 2023-09-14T21:20:00+00:00 (TBIL = 18.3 mg/dL).\"]"
+                "result": "[\"no\"]"
             },
             {
                 "index": 29,
                 "status": "SampleStatus.COMPLETED",
-                "evaluation": "Incorrect",
-                "correct": false,
-                "result": "[[\n  {\"id\":\"312696\",\"effectiveDateTime\":\"2022-08-22T20:10:00+00:00\",\"value\":4.5,\"unit\":\"g/dL\"},\n  {\"id\":\"312694\",\"effectiveDateTime\":\"2022-11-14T15:57:00+00:00\",\"value\":4.0,\"unit\":\"g/dL\"},\n  {\"id\":\"312699\",\"effectiveDateTime\":\"20"
+                "evaluation": "Correct",
+                "correct": true,
+                "result": "[\"no\"]"
             }
         ],
-        "metric_accuracy": 0.06666666666666667,
-        "metric_answer_accuracy": 0.06666666666666667,
-        "metric_date_accuracy": 0.06666666666666667,
-        "metric_correct": 2,
-        "metric_answer_correct": 2,
-        "metric_date_correct": 2,
+        "metric_accuracy": 0.43333333333333335,
+        "metric_answer_accuracy": 0.7666666666666667,
+        "metric_date_accuracy": 0.43333333333333335,
+        "metric_correct": 13,
+        "metric_answer_correct": 23,
+        "metric_date_correct": 13,
         "metric_total": 30,
-        "metric_accuracy_alb": 0.09090909090909091,
-        "metric_accuracy_plt": 0.16666666666666666,
-        "metric_accuracy_tbil": 0.0,
-        "metric_accuracy_inr": 0.0,
+        "metric_accuracy_tbil": 0.5555555555555556,
+        "metric_accuracy_alb": 0.36363636363636365,
+        "metric_accuracy_plt": 0.5,
         "metric_accuracy_alkp": 0.0,
+        "metric_accuracy_inr": 1.0,
         "metric_accuracy_alt": 0.0,
         "metric_accuracy_patient_S0674240": 0.16666666666666666,
-        "metric_accuracy_patient_S2033286": 0.0,
-        "metric_accuracy_patient_S6488980": 0.0,
+        "metric_accuracy_patient_S2033286": 0.3333333333333333,
+        "metric_accuracy_patient_S6488980": 0.4,
         "metric_accuracy_patient_S6500497": 1.0,
-        "metric_accuracy_patient_S6539215": 0.0,
-        "metric_accuracy_patient_S6545016": 0.0,
+        "metric_accuracy_patient_S6539215": 1.0,
+        "metric_accuracy_patient_S6545016": 0.16666666666666666,
         "metric_yes_expected": 24,
         "metric_no_expected": 6,
-        "metric_sensitivity": 0.0,
+        "metric_sensitivity": 0.7083333333333334,
         "metric_specificity": 1.0,
-        "metric_tp": 0,
-        "metric_tn": 2,
+        "metric_tp": 17,
+        "metric_tn": 6,
         "metric_fp": 0,
-        "metric_fn": 0,
-        "metric_date_accuracy_positive": 0.0,
+        "metric_fn": 7,
+        "metric_date_accuracy_positive": 0.2916666666666667,
         "metric_num_cases": 30
     },
     "replicate": 1
